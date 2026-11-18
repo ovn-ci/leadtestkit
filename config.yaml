@@ -1,0 +1,91 @@
+# LeadTestKit configuration for Open vSwitch.
+#
+# Secrets are not configured here; see SETUP.rst.
+# Every option is explained in reference.yaml.
+
+enabled: true
+name: Open Virtual Network
+
+patchwork:
+  api_url: https://patchwork.ozlabs.org/api/1.2
+  project: ovn
+  min_delay: 5s
+
+upstream:
+  git_url: https://github.com/ovn-org/ovn.git
+  default_branch: main
+
+test_repo:
+  repo: ovn-ci/ovn-test
+
+report:
+  style: ovs
+  to: ovs-build@openvswitch.org
+  from_name: "0-day Robot"
+  label: github-robot
+  apply_label: apply-robot
+  reply_to_submitter:
+    #mode: on-failure
+    mode: off
+    cc:
+      address: ovs-dev@openvswitch.org
+      workflows: [apply-robot, Checkpatch]
+    # Make submitters answer on ovs-dev.
+    reply_to: ovs-dev@openvswitch.org
+
+archive:
+  reports_url: https://mail.openvswitch.org/pipermail/ovs-build/
+  dev_url: https://mail.openvswitch.org/pipermail/ovs-dev/
+  ingest: true
+
+smtp:
+  host: smtp.forwardemail.net
+  port: 465
+  security: tls
+
+mode:
+  push: live
+  #checks: post
+  checks: log
+  #email: live
+  email: test
+  allowed_recipients:
+    - rosemarie@redhat.com
+
+alerts:
+  to:
+    - ovs-dev@openvswitch.org
+    - rosemarie@redhat.com
+
+rules:
+  skip:
+    - subject: '^\[[^\]]*\bRFC\b[^\]]*\]'
+      reason: RFC
+  base:
+    - type: subject
+      match: '^\[[^\]]*\b(branch-\d+\.\d+)\b[^\]]*\]'
+      branch: '$1'
+  supersede: true
+
+limits:
+  max_queued_jobs: 20
+  max_inflight_patches: 10
+  per_author_min: 2
+  per_author_max_share: 0.5
+  jobs_per_patch: 20
+  initial_backfill: 3d
+
+workflows:
+  expected:
+    - Build and Test
+    - ovn-kubernetes
+  custom: true
+
+rechecks:
+  enabled: true
+  labels: [github-robot]
+
+pages:
+  enabled: true
+  title: Open Virtual Network CI
+  list_tag: ovs-dev
