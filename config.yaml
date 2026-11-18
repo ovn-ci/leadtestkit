@@ -20,7 +20,8 @@ test_repo:
 
 report:
   style: ovs
-  to: ovs-build@openvswitch.org
+  #to: ovs-build@openvswitch.org
+  to: rosemarie@redhat.com
   from_name: "0-day Robot"
   label: github-robot
   apply_label: apply-robot
