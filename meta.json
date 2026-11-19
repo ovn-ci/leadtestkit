@@ -1,0 +1,21 @@
+{
+  "schema": 14,
+  "discovery_start": "2026-11-19T21:25:09Z",
+  "instance": {
+    "patchwork": "https://patchwork.ozlabs.org",
+    "project": "ovn",
+    "test_repo": "github.com/ovn-ci/ovn-test"
+  },
+  "tools_synced": "2026-11-19T21:25:04Z",
+  "events": {},
+  "archives": {
+    "dev": {
+      "last_month": "2026-11",
+      "months": {
+        "2026-November": 438240,
+        "2026-October": 437547
+      }
+    }
+  },
+  "stats": {}
+}
