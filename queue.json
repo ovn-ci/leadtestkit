@@ -13,21 +13,90 @@
       },
       "total": 2,
       "cover_id": 2348507,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "ae95383ddfb943e1bb25308a0dbcd7231ad1535c",
+        "why": "default"
+      },
+      "branch": "series_534827",
       "discovered": "2026-11-19T21:35:22Z",
+      "started": "2026-11-19T23:30:32Z",
       "patches": [
         {
           "id": 2348508,
           "number": 1,
           "name": "[ovs-dev,v2,1/2] controller: Abort sync on failed neighbor dumps.",
           "msgid": "<8a479ec523599fd460514e8f5255b2362a4a7b95.1795099684.git.guillaume.boutry@canonical.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn v2 1/2] controller: Abort sync on failed neighbor dumps.",
+          "sender": {
+            "name": "Guillaume Boutry",
+            "email": "guillaume.boutry@canonical.com"
+          },
+          "status": "pushed",
+          "sha": "cf20db26054f8ec1e85d61f21956d9033ca92760",
+          "pushed": "2026-11-19T23:30:47Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-19T23:30:47Z",
+              "completed": "2026-11-19T23:30:47Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534827.2348508.apply-robot.final.1795131032.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534827-2348508-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-19T23:30:50Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T21:35:53Z",
               "action": "discovered",
               "detail": "Found in series 534827.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:30:47Z",
+              "action": "applied",
+              "detail": "Commit cf20db26054f8ec1e85d61f21956d9033ca92760 on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:30:48Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534827 to cf20db26054f8ec1e85d61f21956d9033ca92760.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:30:50Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit cf20db26054f8ec1e85d61f21956d9033ca92760 (request 534827-2348508-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:30:53Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534827.2348508.apply-robot.final.1795131032.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
             }
           ]
         },
@@ -36,13 +105,50 @@
           "number": 2,
           "name": "[ovs-dev,v2,2/2] controller: Retain EVPN state after failed dumps.",
           "msgid": "<f1050eb8a08759eac361370cb7985f6dd9352b1d.1795099684.git.guillaume.boutry@canonical.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn v2 2/2] controller: Retain EVPN state after failed dumps.",
+          "sender": {
+            "name": "Guillaume Boutry",
+            "email": "guillaume.boutry@canonical.com"
+          },
+          "status": "applied",
+          "sha": "c436be80d7b8c6e2ebf4cbae2373596ef4f15123",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-19T23:30:47Z",
+              "completed": "2026-11-19T23:30:47Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534827.2348509.apply-robot.final.1795131032.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T21:35:53Z",
               "action": "discovered",
               "detail": "Found in series 534827.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:30:47Z",
+              "action": "applied",
+              "detail": "Commit c436be80d7b8c6e2ebf4cbae2373596ef4f15123 on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:30:54Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534827.2348509.apply-robot.final.1795131032.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
             }
           ]
         }
@@ -59,6 +165,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 2 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        },
+        {
+          "time": "2026-11-19T23:30:45Z",
+          "action": "base-selected",
+          "detail": "main at ae95383ddfb943e1bb25308a0dbcd7231ad1535c: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
         }
       ]
     },
@@ -119,6 +231,112 @@
           "action": "queued",
           "detail": "Eligible for testing; 2 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 534925,
+      "name": "Add \"name\" column to NB NAT table.",
+      "version": 1,
+      "date": "2026-11-19T22:22:57+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=534925",
+      "submitter": {
+        "name": "Mark Michelson",
+        "email": "mmichels@redhat.com"
+      },
+      "total": 5,
+      "cover_id": 2348915,
+      "status": "queued",
+      "discovered": "2026-11-19T23:30:16Z",
+      "patches": [
+        {
+          "id": 2348919,
+          "number": 1,
+          "name": "[ovs-dev,1/5] nbctl: Refactor lr-nat-del.",
+          "msgid": "<20261119222306.2726452-2-mmichels@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T23:30:28Z",
+              "action": "discovered",
+              "detail": "Found in series 534925.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348916,
+          "number": 2,
+          "name": "[ovs-dev,2/5] nbctl: Fix lr-nat-del crash.",
+          "msgid": "<20261119222306.2726452-3-mmichels@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T23:30:28Z",
+              "action": "discovered",
+              "detail": "Found in series 534925.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348917,
+          "number": 3,
+          "name": "[ovs-dev,3/5] nbctl: Allow deletion of NATs with malformed IP addresses.",
+          "msgid": "<20261119222306.2726452-4-mmichels@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T23:30:28Z",
+              "action": "discovered",
+              "detail": "Found in series 534925.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348918,
+          "number": 4,
+          "name": "[ovs-dev,4/5] nbctl: Document --match option for lr-nat-del.",
+          "msgid": "<20261119222306.2726452-5-mmichels@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T23:30:28Z",
+              "action": "discovered",
+              "detail": "Found in series 534925.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348920,
+          "number": 5,
+          "name": "[ovs-dev,5/5] nb: Add a \"name\" column to NAT, along with nbctl commands.",
+          "msgid": "<20261119222306.2726452-6-mmichels@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T23:30:28Z",
+              "action": "discovered",
+              "detail": "Found in series 534925.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T23:30:16Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+        },
+        {
+          "time": "2026-11-19T23:30:28Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 5 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
         }
       ]
     }
