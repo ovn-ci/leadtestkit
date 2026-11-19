@@ -3,7 +3,7 @@
 # Secrets are not configured here; see SETUP.rst.
 # Every option is explained in reference.yaml.
 
-enabled: false
+enabled: true
 name: Open Virtual Network
 
 patchwork:
