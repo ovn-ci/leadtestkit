@@ -68,7 +68,7 @@ limits:
   per_author_min: 2
   per_author_max_share: 0.5
   jobs_per_patch: 40
-  initial_backfill: 1d
+  initial_backfill: 1h
 
 workflows:
   expected:
