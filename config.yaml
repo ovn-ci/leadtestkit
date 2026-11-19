@@ -1,9 +1,9 @@
-# LeadTestKit configuration for Open vSwitch.
+# LeadTestKit configuration for Open Virtual Network.
 #
 # Secrets are not configured here; see SETUP.rst.
 # Every option is explained in reference.yaml.
 
-enabled: false
+enabled: true
 name: Open Virtual Network
 
 patchwork:
@@ -20,14 +20,12 @@ test_repo:
 
 report:
   style: ovs
-  #to: ovs-build@openvswitch.org
-  to: rosemarie@redhat.com
+  to: ovs-build@openvswitch.org
   from_name: "0-day Robot"
   label: github-robot
   apply_label: apply-robot
   reply_to_submitter:
-    #mode: on-failure
-    mode: off
+    mode: on-failure
     cc:
       address: ovs-dev@openvswitch.org
       workflows: [apply-robot, Checkpatch]
@@ -46,12 +44,8 @@ smtp:
 
 mode:
   push: live
-  #checks: post
-  checks: log
-  #email: live
-  email: test
-  allowed_recipients:
-    - rosemarie@redhat.com
+  checks: post
+  email: live
 
 alerts:
   to:
@@ -70,11 +64,11 @@ rules:
 
 limits:
   max_queued_jobs: 20
-  max_inflight_patches: 10
+  max_inflight_patches: 5
   per_author_min: 2
   per_author_max_share: 0.5
-  jobs_per_patch: 20
-  initial_backfill: 3d
+  jobs_per_patch: 40
+  initial_backfill: 1d
 
 workflows:
   expected:
