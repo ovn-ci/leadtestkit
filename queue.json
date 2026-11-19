@@ -86,8 +86,8 @@
               "id": 44638277511,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44638277511",
-              "status": "queued",
-              "updated": "2026-11-19T23:39:07Z",
+              "status": "in_progress",
+              "updated": "2026-11-19T23:55:16Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -102,8 +102,8 @@
               "id": 44638277484,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44638277484",
-              "status": "queued",
-              "updated": "2026-11-19T23:42:19Z",
+              "status": "in_progress",
+              "updated": "2026-11-19T23:55:16Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -211,6 +211,20 @@
               "detail": "ovn-kubernetes run 44638277484, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44638277484/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:16Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 44638277511, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44638277511/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:16Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 44638277484, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44638277484/attempts/1"
             }
           ]
         },
@@ -299,21 +313,90 @@
         "email": "jtanenba@redhat.com"
       },
       "total": 2,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "ae95383ddfb943e1bb25308a0dbcd7231ad1535c",
+        "why": "default"
+      },
+      "branch": "series_534878",
       "discovered": "2026-11-19T21:35:22Z",
+      "started": "2026-11-19T23:55:19Z",
       "patches": [
         {
           "id": 2348664,
           "number": 1,
           "name": "[ovs-dev,v1,1/2] northd: Fix SB DB error when deleting a router.",
           "msgid": "<20261119184858.2784434-1-jtanenba@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [Patch ovn v1 1/2] northd: Fix SB DB error when deleting a router.",
+          "sender": {
+            "name": "Jacob Tanenbaum",
+            "email": "jtanenba@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "94653086eb90c70cc33baa14798cd4521a14c525",
+          "pushed": "2026-11-19T23:55:27Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-19T23:55:27Z",
+              "completed": "2026-11-19T23:55:27Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534878.2348664.apply-robot.final.1795132519.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534878-2348664-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-19T23:55:30Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T21:35:59Z",
               "action": "discovered",
               "detail": "Found in series 534878.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:27Z",
+              "action": "applied",
+              "detail": "Commit 94653086eb90c70cc33baa14798cd4521a14c525 on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:28Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534878 to 94653086eb90c70cc33baa14798cd4521a14c525.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:30Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 94653086eb90c70cc33baa14798cd4521a14c525 (request 534878-2348664-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:31Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534878.2348664.apply-robot.final.1795132519.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
             }
           ]
         },
@@ -322,13 +405,50 @@
           "number": 2,
           "name": "[ovs-dev,v1,2/2] tests: Verify flows are deleted when a router lsp is deleted.",
           "msgid": "<20261119184858.2784434-2-jtanenba@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [Patch ovn v1 2/2] tests: Verify flows are deleted when a router lsp is deleted.",
+          "sender": {
+            "name": "Jacob Tanenbaum",
+            "email": "jtanenba@redhat.com"
+          },
+          "status": "applied",
+          "sha": "b1458037e182fbacd7833e0f59a58b7be3a0ccbb",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-19T23:55:27Z",
+              "completed": "2026-11-19T23:55:27Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534878.2348666.apply-robot.final.1795132519.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T21:35:59Z",
               "action": "discovered",
               "detail": "Found in series 534878.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:27Z",
+              "action": "applied",
+              "detail": "Commit b1458037e182fbacd7833e0f59a58b7be3a0ccbb on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
+            },
+            {
+              "time": "2026-11-19T23:55:31Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534878.2348666.apply-robot.final.1795132519.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
             }
           ]
         }
@@ -345,6 +465,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 2 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        },
+        {
+          "time": "2026-11-19T23:55:26Z",
+          "action": "base-selected",
+          "detail": "main at ae95383ddfb943e1bb25308a0dbcd7231ad1535c: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
         }
       ]
     },
