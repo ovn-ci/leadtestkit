@@ -17,6 +17,13 @@
         "2026-November": 438240,
         "2026-October": 437547
       }
+    },
+    "reports": {
+      "last_month": "2026-11",
+      "months": {
+        "2026-November": 60530,
+        "2026-October": 59801
+      }
     }
   },
   "stats": {}
