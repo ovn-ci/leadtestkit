@@ -1,4 +1,306 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 534792,
+      "name": "[ovs-dev,1/3] ci: Run ovn-kubernetes tests on Ubuntu 24.04.",
+      "version": 1,
+      "date": "2026-11-19T13:07:39+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=534792",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 3,
+      "status": "queued",
+      "discovered": "2026-11-19T21:35:22Z",
+      "patches": [
+        {
+          "id": 2348367,
+          "number": 1,
+          "name": "[ovs-dev,1/3] ci: Run ovn-kubernetes tests on Ubuntu 24.04.",
+          "msgid": "<20261119130741.3519314-1-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:36Z",
+              "action": "discovered",
+              "detail": "Found in series 534792.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348368,
+          "number": 2,
+          "name": "[ovs-dev,2/3] ci: Align ovn-kubernetes lanes with u/s.",
+          "msgid": "<20261119130741.3519314-2-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:36Z",
+              "action": "discovered",
+              "detail": "Found in series 534792.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348369,
+          "number": 3,
+          "name": "[ovs-dev,3/3] ci: Remove the OSX job.",
+          "msgid": "<20261119130741.3519314-3-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:36Z",
+              "action": "discovered",
+              "detail": "Found in series 534792.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T21:35:22Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        },
+        {
+          "time": "2026-11-19T21:35:36Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 3 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 534808,
+      "name": "[ovs-dev,v3] northd: Mirror lport traffic outside of port security.",
+      "version": 3,
+      "date": "2026-11-19T13:53:57+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=534808",
+      "submitter": {
+        "name": "Rukomoinikova Aleksandra",
+        "email": "ARukomoinikova@k2.cloud"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-19T21:35:22Z",
+      "patches": [
+        {
+          "id": 2348450,
+          "number": 1,
+          "name": "[ovs-dev,v3] northd: Mirror lport traffic outside of port security.",
+          "msgid": "<20261119135400.23922-1-ARukomoinikova@k2.cloud>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:42Z",
+              "action": "discovered",
+              "detail": "Found in series 534808.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T21:35:22Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        },
+        {
+          "time": "2026-11-19T21:35:42Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 534826,
+      "name": "[ovs-dev,1/2] tests: Add missing wait for \"Router policy incremental processing\".",
+      "version": 1,
+      "date": "2026-11-19T15:01:40+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=534826",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 2,
+      "status": "queued",
+      "discovered": "2026-11-19T21:35:22Z",
+      "patches": [
+        {
+          "id": 2348505,
+          "number": 1,
+          "name": "[ovs-dev,1/2] tests: Add missing wait for \"Router policy incremental processing\".",
+          "msgid": "<20261119150141.812734-1-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:48Z",
+              "action": "discovered",
+              "detail": "Found in series 534826.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348506,
+          "number": 2,
+          "name": "[ovs-dev,2/2] tests: Do the sync after wait_column in \"Network Function - vtap mode\".",
+          "msgid": "<20261119150141.812734-2-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:48Z",
+              "action": "discovered",
+              "detail": "Found in series 534826.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T21:35:22Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        },
+        {
+          "time": "2026-11-19T21:35:48Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 534827,
+      "name": "Synchronize EVPN neighbors after complete dumps",
+      "version": 2,
+      "date": "2026-11-19T15:06:06+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=534827",
+      "submitter": {
+        "name": "Guillaume Boutry",
+        "email": "guillaume.boutry@canonical.com"
+      },
+      "total": 2,
+      "cover_id": 2348507,
+      "status": "queued",
+      "discovered": "2026-11-19T21:35:22Z",
+      "patches": [
+        {
+          "id": 2348508,
+          "number": 1,
+          "name": "[ovs-dev,v2,1/2] controller: Abort sync on failed neighbor dumps.",
+          "msgid": "<8a479ec523599fd460514e8f5255b2362a4a7b95.1795099684.git.guillaume.boutry@canonical.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:53Z",
+              "action": "discovered",
+              "detail": "Found in series 534827.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348509,
+          "number": 2,
+          "name": "[ovs-dev,v2,2/2] controller: Retain EVPN state after failed dumps.",
+          "msgid": "<f1050eb8a08759eac361370cb7985f6dd9352b1d.1795099684.git.guillaume.boutry@canonical.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:53Z",
+              "action": "discovered",
+              "detail": "Found in series 534827.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T21:35:22Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        },
+        {
+          "time": "2026-11-19T21:35:53Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 534878,
+      "name": "[ovs-dev,v1,1/2] northd: Fix SB DB error when deleting a router.",
+      "version": 1,
+      "date": "2026-11-19T18:48:57+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=534878",
+      "submitter": {
+        "name": "Jacob Tanenbaum",
+        "email": "jtanenba@redhat.com"
+      },
+      "total": 2,
+      "status": "queued",
+      "discovered": "2026-11-19T21:35:22Z",
+      "patches": [
+        {
+          "id": 2348664,
+          "number": 1,
+          "name": "[ovs-dev,v1,1/2] northd: Fix SB DB error when deleting a router.",
+          "msgid": "<20261119184858.2784434-1-jtanenba@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:59Z",
+              "action": "discovered",
+              "detail": "Found in series 534878.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348666,
+          "number": 2,
+          "name": "[ovs-dev,v1,2/2] tests: Verify flows are deleted when a router lsp is deleted.",
+          "msgid": "<20261119184858.2784434-2-jtanenba@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T21:35:59Z",
+              "action": "discovered",
+              "detail": "Found in series 534878.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T21:35:22Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        },
+        {
+          "time": "2026-11-19T21:35:59Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44618494334/attempts/1"
+        }
+      ]
+    }
+  ]
 }

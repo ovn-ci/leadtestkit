@@ -7,7 +7,9 @@
     "test_repo": "github.com/ovn-ci/ovn-test"
   },
   "tools_synced": "2026-11-19T21:25:04Z",
-  "events": {},
+  "events": {
+    "series-completed": 5442386
+  },
   "archives": {
     "dev": {
       "last_month": "2026-11",
