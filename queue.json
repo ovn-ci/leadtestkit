@@ -1595,7 +1595,7 @@
           "status": "pushed",
           "sha": "985f5f2c31064e5b72062b60dbcea6d23f87264e",
           "pushed": "2026-11-20T08:00:21Z",
-          "comments_pending": true,
+          "comments_seen": 3793673,
           "runs": [
             {
               "kind": "apply",
