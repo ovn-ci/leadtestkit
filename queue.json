@@ -1493,6 +1493,12 @@
               "detail": "Replied about github-robot: Build and Test (fail) to \"Mark Michelson\" <mmichels@redhat.com>. Message-ID: <leadtest.534925.2348920.github-robot-build-and-test.reply.1795137137.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44700343316/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44693244898/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:22:35Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060596.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44700343316/attempts/1"
             }
           ]
         }
@@ -1764,6 +1770,18 @@
               "detail": "Replied about github-robot: Checkpatch (warning) to \"Ales Musil\" <amusil@redhat.com>, ovs-dev@openvswitch.org. Message-ID: <leadtest.534979.2349084.github-robot-checkpatch.reply.1795161618.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44700343316/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44699127608/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:22:23Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060592.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44700343316/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:22:48Z",
+              "action": "check-posted",
+              "detail": "warning check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060597.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44700343316/attempts/1"
             }
           ]
         }
