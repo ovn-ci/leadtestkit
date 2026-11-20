@@ -1436,6 +1436,12 @@
               "detail": "Replied about github-robot: Checkpatch (warning) to \"Mark Michelson\" <mmichels@redhat.com>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535063.2349303.github-robot-checkpatch.reply.1795185047.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44799537115/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44802028938/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:39:24Z",
+              "action": "check-posted",
+              "detail": "warning check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060641.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44801871468/attempts/1"
             }
           ]
         }
