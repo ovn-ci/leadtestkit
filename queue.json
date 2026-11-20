@@ -557,6 +557,18 @@
               "detail": "ovn-kubernetes run 44641639230, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44643581028/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639230/attempts/1"
+            },
+            {
+              "time": "2026-11-20T00:13:51Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060542.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44643581028/attempts/1"
+            },
+            {
+              "time": "2026-11-20T00:14:13Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060547.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44643581028/attempts/1"
             }
           ]
         },
@@ -609,6 +621,12 @@
               "action": "report-sent",
               "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534878.2348666.apply-robot.final.1795132519.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1"
+            },
+            {
+              "time": "2026-11-20T00:14:02Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060543.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44643581028/attempts/1"
             }
           ]
         }
