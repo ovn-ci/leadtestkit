@@ -1305,8 +1305,8 @@
               "id": 44693244898,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44693244898",
-              "status": "queued",
-              "updated": "2026-11-20T07:15:28Z",
+              "status": "in_progress",
+              "updated": "2026-11-20T08:00:13Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1449,6 +1449,13 @@
               "detail": "ovn-kubernetes run 44693244930, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44692913670/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44693244930/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:00:13Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 44693244898, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44698444515/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44693244898/attempts/1"
             }
           ]
         }
@@ -1485,21 +1492,90 @@
         "email": "amusil@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "ae95383ddfb943e1bb25308a0dbcd7231ad1535c",
+        "why": "default"
+      },
+      "branch": "series_534979",
       "discovered": "2026-11-20T07:52:41Z",
+      "started": "2026-11-20T08:00:18Z",
       "patches": [
         {
           "id": 2349084,
           "number": 1,
           "name": "[ovs-dev] treewide: Remove remaining OSX build scripts and references.",
           "msgid": "<20261120075057.955732-1-amusil@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn] treewide: Remove remaining OSX build scripts and references.",
+          "sender": {
+            "name": "Ales Musil",
+            "email": "amusil@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "985f5f2c31064e5b72062b60dbcea6d23f87264e",
+          "pushed": "2026-11-20T08:00:21Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-20T08:00:21Z",
+              "completed": "2026-11-20T08:00:21Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534979.2349084.apply-robot.final.1795161618.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534979-2349084-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T08:00:24Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-20T07:52:47Z",
               "action": "discovered",
               "detail": "Found in series 534979.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44694766866/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:00:21Z",
+              "action": "applied",
+              "detail": "Commit 985f5f2c31064e5b72062b60dbcea6d23f87264e on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44698444515/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:00:22Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534979 to 985f5f2c31064e5b72062b60dbcea6d23f87264e.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44698444515/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:00:24Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 985f5f2c31064e5b72062b60dbcea6d23f87264e (request 534979-2349084-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44698444515/attempts/1"
+            },
+            {
+              "time": "2026-11-20T08:00:27Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534979.2349084.apply-robot.final.1795161618.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44698444515/attempts/1"
             }
           ]
         }
@@ -1516,6 +1592,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44694766866/attempts/1"
+        },
+        {
+          "time": "2026-11-20T08:00:19Z",
+          "action": "base-selected",
+          "detail": "main at ae95383ddfb943e1bb25308a0dbcd7231ad1535c: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44698444515/attempts/1"
         }
       ]
     }
