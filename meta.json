@@ -26,5 +26,7 @@
       }
     }
   },
-  "stats": {}
+  "stats": {
+    "jobs_per_patch": 41
+  }
 }
