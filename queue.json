@@ -722,21 +722,90 @@
       },
       "total": 5,
       "cover_id": 2348915,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "ae95383ddfb943e1bb25308a0dbcd7231ad1535c",
+        "why": "default"
+      },
+      "branch": "series_534925",
       "discovered": "2026-11-19T23:30:16Z",
+      "started": "2026-11-20T01:12:17Z",
       "patches": [
         {
           "id": 2348919,
           "number": 1,
           "name": "[ovs-dev,1/5] nbctl: Refactor lr-nat-del.",
           "msgid": "<20261119222306.2726452-2-mmichels@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn 1/5] nbctl: Refactor lr-nat-del.",
+          "sender": {
+            "name": "Mark Michelson",
+            "email": "mmichels@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "13fc0a2c941d04d4c164e2a76326132752f31fc7",
+          "pushed": "2026-11-20T01:12:48Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-20T01:12:48Z",
+              "completed": "2026-11-20T01:12:48Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534925.2348919.apply-robot.final.1795137137.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534925-2348919-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T01:12:51Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T23:30:28Z",
               "action": "discovered",
               "detail": "Found in series 534925.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:48Z",
+              "action": "applied",
+              "detail": "Commit 13fc0a2c941d04d4c164e2a76326132752f31fc7 on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:49Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534925 to 13fc0a2c941d04d4c164e2a76326132752f31fc7.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:51Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 13fc0a2c941d04d4c164e2a76326132752f31fc7 (request 534925-2348919-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:54Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534925.2348919.apply-robot.final.1795137137.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
             }
           ]
         },
@@ -745,13 +814,50 @@
           "number": 2,
           "name": "[ovs-dev,2/5] nbctl: Fix lr-nat-del crash.",
           "msgid": "<20261119222306.2726452-3-mmichels@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn 2/5] nbctl: Fix lr-nat-del crash.",
+          "sender": {
+            "name": "Mark Michelson",
+            "email": "mmichels@redhat.com"
+          },
+          "status": "applied",
+          "sha": "2a079c5481b897d55f092dc840c64e8ae895239b",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-20T01:12:48Z",
+              "completed": "2026-11-20T01:12:48Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534925.2348916.apply-robot.final.1795137137.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T23:30:28Z",
               "action": "discovered",
               "detail": "Found in series 534925.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:48Z",
+              "action": "applied",
+              "detail": "Commit 2a079c5481b897d55f092dc840c64e8ae895239b on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:54Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534925.2348916.apply-robot.final.1795137137.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
             }
           ]
         },
@@ -760,13 +866,50 @@
           "number": 3,
           "name": "[ovs-dev,3/5] nbctl: Allow deletion of NATs with malformed IP addresses.",
           "msgid": "<20261119222306.2726452-4-mmichels@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn 3/5] nbctl: Allow deletion of NATs with malformed IP addresses.",
+          "sender": {
+            "name": "Mark Michelson",
+            "email": "mmichels@redhat.com"
+          },
+          "status": "applied",
+          "sha": "3644202d0b0c0d334d40a753a83ffb9b22349db3",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-20T01:12:48Z",
+              "completed": "2026-11-20T01:12:48Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534925.2348917.apply-robot.final.1795137137.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T23:30:28Z",
               "action": "discovered",
               "detail": "Found in series 534925.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:48Z",
+              "action": "applied",
+              "detail": "Commit 3644202d0b0c0d334d40a753a83ffb9b22349db3 on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:56Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534925.2348917.apply-robot.final.1795137137.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
             }
           ]
         },
@@ -775,13 +918,50 @@
           "number": 4,
           "name": "[ovs-dev,4/5] nbctl: Document --match option for lr-nat-del.",
           "msgid": "<20261119222306.2726452-5-mmichels@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn 4/5] nbctl: Document --match option for lr-nat-del.",
+          "sender": {
+            "name": "Mark Michelson",
+            "email": "mmichels@redhat.com"
+          },
+          "status": "applied",
+          "sha": "2cb91f58995fc73a3fa44f93de590f11b4837556",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-20T01:12:48Z",
+              "completed": "2026-11-20T01:12:48Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534925.2348918.apply-robot.final.1795137137.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T23:30:28Z",
               "action": "discovered",
               "detail": "Found in series 534925.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:48Z",
+              "action": "applied",
+              "detail": "Commit 2cb91f58995fc73a3fa44f93de590f11b4837556 on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:57Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534925.2348918.apply-robot.final.1795137137.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
             }
           ]
         },
@@ -790,13 +970,50 @@
           "number": 5,
           "name": "[ovs-dev,5/5] nb: Add a \"name\" column to NAT, along with nbctl commands.",
           "msgid": "<20261119222306.2726452-6-mmichels@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn 5/5] nb: Add a \"name\" column to NAT, along with nbctl commands.",
+          "sender": {
+            "name": "Mark Michelson",
+            "email": "mmichels@redhat.com"
+          },
+          "status": "applied",
+          "sha": "f5d84a030636b862b4a9316f068775cf67e289b3",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ae95383ddfb9).",
+              "updated": "2026-11-20T01:12:48Z",
+              "completed": "2026-11-20T01:12:48Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534925.2348920.apply-robot.final.1795137137.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T23:30:28Z",
               "action": "discovered",
               "detail": "Found in series 534925.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:48Z",
+              "action": "applied",
+              "detail": "Commit f5d84a030636b862b4a9316f068775cf67e289b3 on base main (ae95383ddfb943e1bb25308a0dbcd7231ad1535c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
+            },
+            {
+              "time": "2026-11-20T01:12:57Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534925.2348920.apply-robot.final.1795137137.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
             }
           ]
         }
@@ -813,6 +1030,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 5 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44638138187/attempts/1"
+        },
+        {
+          "time": "2026-11-20T01:12:46Z",
+          "action": "base-selected",
+          "detail": "main at ae95383ddfb943e1bb25308a0dbcd7231ad1535c: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
         }
       ]
     }
