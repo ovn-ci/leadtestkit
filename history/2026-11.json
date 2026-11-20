@@ -3695,6 +3695,12 @@
               "action": "reply-sent",
               "detail": "Replied about apply-robot (fail) to \"Jacob Tanenbaum\" <jtanenba@redhat.com>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535100.2349393.apply-robot.reply.1795198423.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+            },
+            {
+              "time": "2026-11-20T18:25:33Z",
+              "action": "check-posted",
+              "detail": "fail check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060632.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44792499214/attempts/1"
             }
           ]
         }
