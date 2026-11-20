@@ -427,8 +427,8 @@
               "id": 44641639243,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639243",
-              "status": "queued",
-              "updated": "2026-11-20T00:03:01Z",
+              "status": "in_progress",
+              "updated": "2026-11-20T00:51:05Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -443,8 +443,8 @@
               "id": 44641639230,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639230",
-              "status": "queued",
-              "updated": "2026-11-20T00:13:36Z",
+              "status": "in_progress",
+              "updated": "2026-11-20T00:51:05Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -591,6 +591,20 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060547.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44643581028/attempts/1"
+            },
+            {
+              "time": "2026-11-20T00:51:05Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 44641639243, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44647627864/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639243/attempts/1"
+            },
+            {
+              "time": "2026-11-20T00:51:05Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 44641639230, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44647627864/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639230/attempts/1"
             }
           ]
         },
