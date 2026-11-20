@@ -1284,8 +1284,8 @@
               "id": 44802029777,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44802029777",
-              "status": "queued",
-              "updated": "2026-11-20T19:29:24Z",
+              "status": "in_progress",
+              "updated": "2026-11-20T20:24:40Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1300,8 +1300,8 @@
               "id": 44802029738,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44802029738",
-              "status": "queued",
-              "updated": "2026-11-20T19:42:29Z",
+              "status": "in_progress",
+              "updated": "2026-11-20T20:24:40Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1454,6 +1454,20 @@
               "action": "workflow-updated",
               "detail": "ovn-kubernetes run 44802029738, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44801871468/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44802029738/attempts/1"
+            },
+            {
+              "time": "2026-11-20T20:24:40Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 44802029777, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44808824575/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44802029777/attempts/1"
+            },
+            {
+              "time": "2026-11-20T20:24:40Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 44802029738, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44808824575/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44802029738/attempts/1"
             }
           ]
