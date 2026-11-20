@@ -1473,6 +1473,51 @@
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44649594968/attempts/1"
         }
       ]
+    },
+    {
+      "id": 534979,
+      "name": "[ovs-dev] treewide: Remove remaining OSX build scripts and references.",
+      "version": 1,
+      "date": "2026-11-20T07:50:57+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=534979",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-20T07:52:41Z",
+      "patches": [
+        {
+          "id": 2349084,
+          "number": 1,
+          "name": "[ovs-dev] treewide: Remove remaining OSX build scripts and references.",
+          "msgid": "<20261120075057.955732-1-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-20T07:52:47Z",
+              "action": "discovered",
+              "detail": "Found in series 534979.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44694766866/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-20T07:52:41Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44694766866/attempts/1"
+        },
+        {
+          "time": "2026-11-20T07:52:47Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44694766866/attempts/1"
+        }
+      ]
     }
   ]
 }
