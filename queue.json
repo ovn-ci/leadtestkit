@@ -612,7 +612,7 @@
           "status": "pushed",
           "sha": "3644202d0b0c0d334d40a753a83ffb9b22349db3",
           "pushed": "2026-11-20T04:39:35Z",
-          "comments_pending": true,
+          "comments_seen": 3793590,
           "runs": [
             {
               "kind": "apply",
