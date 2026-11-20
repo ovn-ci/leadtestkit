@@ -544,6 +544,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.534827.2348509.github-robot-build-and-test.final.1795131032.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44664083092/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44656023853/attempts/1"
+            },
+            {
+              "time": "2026-11-20T03:25:24Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060568.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44664083092/attempts/1"
             }
           ]
         }
@@ -896,6 +902,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44662441260/attempts/1"
+            },
+            {
+              "time": "2026-11-20T03:25:08Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060567.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44664083092/attempts/1"
             }
           ]
         },
@@ -1106,6 +1118,12 @@
               "time": "2026-11-20T03:24:40Z",
               "action": "check-posted",
               "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/44661057243.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44664083092/attempts/1"
+            },
+            {
+              "time": "2026-11-20T03:24:54Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060566.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44664083092/attempts/1"
             }
           ]
