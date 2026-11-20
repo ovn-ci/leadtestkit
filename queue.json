@@ -334,6 +334,126 @@
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44698444515/attempts/1"
         }
       ]
+    },
+    {
+      "id": 535005,
+      "name": "[ovs-dev] tests: Mark \"Network Function - vtap mode\" unstable.",
+      "version": 1,
+      "date": "2026-11-20T10:08:33+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=535005",
+      "submitter": {
+        "name": "Dumitru Ceara",
+        "email": "dceara@redhat.com"
+      },
+      "total": 1,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "3fd22049cc512580eb4c0e47b9f60bb9b4def300",
+        "why": "default"
+      },
+      "branch": "series_535005",
+      "discovered": "2026-11-20T10:23:57Z",
+      "started": "2026-11-20T10:24:14Z",
+      "patches": [
+        {
+          "id": 2349142,
+          "number": 1,
+          "name": "[ovs-dev] tests: Mark \"Network Function - vtap mode\" unstable.",
+          "msgid": "<20261120100833.2849038-1-dceara@redhat.com>",
+          "subject": "[ovs-dev] [PATCH ovn] tests: Mark \"Network Function - vtap mode\" unstable.",
+          "sender": {
+            "name": "Dumitru Ceara",
+            "email": "dceara@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "1944916ec85df21dee0d9bf877848abbb994c137",
+          "pushed": "2026-11-20T10:24:19Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (3fd22049cc51).",
+              "updated": "2026-11-20T10:24:19Z",
+              "completed": "2026-11-20T10:24:19Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535005.2349142.apply-robot.final.1795170254.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535005-2349142-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T10:24:22Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-20T10:24:10Z",
+              "action": "discovered",
+              "detail": "Found in series 535005.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:19Z",
+              "action": "applied",
+              "detail": "Commit 1944916ec85df21dee0d9bf877848abbb994c137 on base main (3fd22049cc512580eb4c0e47b9f60bb9b4def300).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:20Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535005 to 1944916ec85df21dee0d9bf877848abbb994c137.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:22Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 1944916ec85df21dee0d9bf877848abbb994c137 (request 535005-2349142-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:25Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535005.2349142.apply-robot.final.1795170254.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-20T10:23:57Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+        },
+        {
+          "time": "2026-11-20T10:24:10Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+        },
+        {
+          "time": "2026-11-20T10:24:17Z",
+          "action": "base-selected",
+          "detail": "main at 3fd22049cc512580eb4c0e47b9f60bb9b4def300: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44716843583/attempts/1"
+        }
+      ]
     }
   ]
 }
