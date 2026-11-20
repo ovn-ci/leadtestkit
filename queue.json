@@ -565,7 +565,7 @@
             "name": "Jacob Tanenbaum",
             "email": "jtanenba@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "94653086eb90c70cc33baa14798cd4521a14c525",
           "pushed": "2026-11-19T23:55:27Z",
           "runs": [
@@ -854,6 +854,12 @@
               "detail": "Replied about github-robot: ovn-kubernetes (fail) to \"Jacob Tanenbaum\" <jtanenba@redhat.com>. Message-ID: <leadtest.534878.2348664.github-robot-ovn-kubernetes.reply.1795132519.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44662441260/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639230/attempts/1"
+            },
+            {
+              "time": "2026-11-20T02:54:39Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44662441260/attempts/1"
             }
           ]
         },
