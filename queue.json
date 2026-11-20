@@ -553,6 +553,12 @@
               "detail": "Replied about github-robot: Build and Test (fail) to \"Mark Michelson\" <mmichels@redhat.com>. Message-ID: <leadtest.535063.2349299.github-robot-build-and-test.reply.1795185047.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44770542193/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44757074854/attempts/1"
+            },
+            {
+              "time": "2026-11-20T16:27:27Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060626.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44773120200/attempts/1"
             }
           ]
         },
