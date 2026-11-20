@@ -33,7 +33,7 @@
             "name": "Dumitru Ceara",
             "email": "dceara@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "1944916ec85df21dee0d9bf877848abbb994c137",
           "pushed": "2026-11-20T10:24:19Z",
           "comments_seen": 3793804,
@@ -304,6 +304,12 @@
               "detail": "Replied about github-robot: ovn-kubernetes (fail) to \"Dumitru Ceara\" <dceara@redhat.com>. Message-ID: <leadtest.535005.2349142.github-robot-ovn-kubernetes.reply.1795170254.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44737642043/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44718953581/attempts/1"
+            },
+            {
+              "time": "2026-11-20T12:52:55Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44737642043/attempts/1"
             }
           ]
         }
