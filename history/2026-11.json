@@ -3617,6 +3617,114 @@
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44737642043/attempts/1"
         }
       ]
+    },
+    {
+      "id": 535100,
+      "name": "[ovs-dev,v1] tests: Fix race in the NF vtap mode mirroring checks.",
+      "version": 1,
+      "date": "2026-11-20T18:11:33+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=535100",
+      "submitter": {
+        "name": "Jacob Tanenbaum",
+        "email": "jtanenba@redhat.com"
+      },
+      "total": 1,
+      "status": "done",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "51d39f0abffd4c76346d2c5bc58034b5e124abb1",
+        "why": "default"
+      },
+      "discovered": "2026-11-20T18:13:20Z",
+      "started": "2026-11-20T18:13:43Z",
+      "finished": "2026-11-20T18:13:49Z",
+      "patches": [
+        {
+          "id": 2349393,
+          "number": 1,
+          "name": "[ovs-dev,v1] tests: Fix race in the NF vtap mode mirroring checks.",
+          "msgid": "<20261120181133.3137279-1-jtanenba@redhat.com>",
+          "subject": "[ovs-dev] [Patch ovn v1] tests: Fix race in the NF vtap mode mirroring checks.",
+          "sender": {
+            "name": "Jacob Tanenbaum",
+            "email": "jtanenba@redhat.com"
+          },
+          "status": "apply-failed",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "fail",
+              "details": "Failed to apply on top of main (51d39f0abffd):\n\nPatch failed at 0001 tests: Fix race in the NF vtap mode mirroring checks.\n\nerror: Failed to merge in the changes.\nhint: Use 'git am --show-current-patch=diff' to see the failed patch\nhint: When you have resolved this problem, run \"git am --continue\".\nhint: If you prefer to skip this patch, run \"git am --skip\" instead.\nhint: To restore the original branch and stop patching, run \"git am --abort\".\nhint: Disable this message with \"git config set advice.mergeConflict false\"",
+              "updated": "2026-11-20T18:13:45Z",
+              "completed": "2026-11-20T18:13:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535100.2349393.apply-robot.final.1795198423.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.535100.2349393.apply-robot.reply.1795198423.1@ovn.org>"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-20T18:13:33Z",
+              "action": "discovered",
+              "detail": "Found in series 535100.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+            },
+            {
+              "time": "2026-11-20T18:13:45Z",
+              "action": "apply-failed",
+              "detail": "Failed to apply on top of main (51d39f0abffd):\n\nPatch failed at 0001 tests: Fix race in the NF vtap mode mirroring checks.\n\nerror: Failed to merge in the changes.\nhint: Use 'git am --show-current-patch=diff' to see the failed patch\nhint: When you have resolved this problem, run \"git am --continue\".\nhint: If you prefer to skip this patch, run \"git am --skip\" instead.\nhint: To restore the original branch and stop patching, run \"git am --abort\".\nhint: Disable this message with \"git config set advice.mergeConflict false\"",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+            },
+            {
+              "time": "2026-11-20T18:13:45Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (fail). Message-ID: <leadtest.535100.2349393.apply-robot.final.1795198423.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+            },
+            {
+              "time": "2026-11-20T18:13:47Z",
+              "action": "reply-sent",
+              "detail": "Replied about apply-robot (fail) to \"Jacob Tanenbaum\" <jtanenba@redhat.com>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535100.2349393.apply-robot.reply.1795198423.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-20T18:13:20Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+        },
+        {
+          "time": "2026-11-20T18:13:33Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+        },
+        {
+          "time": "2026-11-20T18:13:44Z",
+          "action": "base-selected",
+          "detail": "main at 51d39f0abffd4c76346d2c5bc58034b5e124abb1: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+        },
+        {
+          "time": "2026-11-20T18:13:49Z",
+          "action": "done",
+          "detail": "All patches and reports are complete.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44790130488/attempts/1"
+        }
+      ]
     }
   ]
 }
