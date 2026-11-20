@@ -649,7 +649,7 @@
             "name": "Mark Michelson",
             "email": "mmichels@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "3644202d0b0c0d334d40a753a83ffb9b22349db3",
           "pushed": "2026-11-20T04:39:35Z",
           "comments_seen": 3793590,
@@ -963,6 +963,12 @@
               "detail": "Replied about github-robot: ovn-kubernetes (fail) to \"Mark Michelson\" <mmichels@redhat.com>. Message-ID: <leadtest.534925.2348917.github-robot-ovn-kubernetes.reply.1795137137.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44691138080/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44675887711/attempts/1"
+            },
+            {
+              "time": "2026-11-20T07:12:14Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44691138080/attempts/1"
             }
           ]
         },
@@ -1047,8 +1053,8 @@
               "id": 44690290933,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44690290933",
-              "status": "queued",
-              "updated": "2026-11-20T07:00:07Z",
+              "status": "in_progress",
+              "updated": "2026-11-20T07:12:17Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1182,6 +1188,13 @@
               "action": "check-posted",
               "detail": "warning check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060584.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44691138080/attempts/1"
+            },
+            {
+              "time": "2026-11-20T07:12:17Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 44690290933, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44691138080/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44690290933/attempts/1"
             }
           ]
         },
@@ -1195,8 +1208,9 @@
             "name": "Mark Michelson",
             "email": "mmichels@redhat.com"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "f5d84a030636b862b4a9316f068775cf67e289b3",
+          "pushed": "2026-11-20T07:12:20Z",
           "runs": [
             {
               "kind": "apply",
@@ -1214,6 +1228,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534925-2348920-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T07:12:23Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -1240,6 +1265,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060554.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44653422362/attempts/1"
+            },
+            {
+              "time": "2026-11-20T07:12:21Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534925 to f5d84a030636b862b4a9316f068775cf67e289b3.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44691138080/attempts/1"
+            },
+            {
+              "time": "2026-11-20T07:12:23Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit f5d84a030636b862b4a9316f068775cf67e289b3 (request 534925-2348920-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44691138080/attempts/1"
             }
           ]
         }
