@@ -338,7 +338,7 @@
             "name": "Mark Michelson",
             "email": "mmichels@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "6ee85c4db96ceee0597c42011e8511994de72a2f",
           "pushed": "2026-11-20T14:48:52Z",
           "comments_seen": 3793927,
@@ -623,6 +623,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.535063.2349299.github-robot-ovn-kubernetes.final.1795185047.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44797204736/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44757074865/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:02:29Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44797204736/attempts/1"
             }
           ]
         },
@@ -716,15 +722,24 @@
               "id": 44776294501,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44776294501",
-              "status": "in_progress",
-              "updated": "2026-11-20T17:14:32Z",
+              "status": "completed",
+              "conclusion": "failure",
+              "result": "fail",
+              "updated": "2026-11-20T19:02:32Z",
+              "completed": "2026-11-20T19:02:32Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535063.2349301.github-robot-ovn-kubernetes.pending.1795185047.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535063.2349301.github-robot-ovn-kubernetes.final.1795185047.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.535063.2349301.github-robot-ovn-kubernetes.reply.1795185047.1@ovn.org>"
+              }
             }
           ],
           "decisions": [
@@ -892,6 +907,27 @@
               "action": "check-posted",
               "detail": "fail check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060631.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44783041777/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:02:32Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 44776294501, attempt 1: completed: failure.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44797204736/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44776294501/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:02:40Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: ovn-kubernetes (fail). Message-ID: <leadtest.535063.2349301.github-robot-ovn-kubernetes.final.1795185047.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44797204736/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44776294501/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:02:40Z",
+              "action": "reply-sent",
+              "detail": "Replied about github-robot: ovn-kubernetes (fail) to \"Mark Michelson\" <mmichels@redhat.com>. Message-ID: <leadtest.535063.2349301.github-robot-ovn-kubernetes.reply.1795185047.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44797204736/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44776294501/attempts/1"
             }
           ]
         },
@@ -905,8 +941,9 @@
             "name": "Mark Michelson",
             "email": "mmichels@redhat.com"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "df068216f388938c794fe13fb683b1bf6a15985c",
+          "pushed": "2026-11-20T19:02:34Z",
           "runs": [
             {
               "kind": "apply",
@@ -924,6 +961,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535063-2349302-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T19:02:38Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -950,6 +998,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060617.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44755599783/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:02:36Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535063 to df068216f388938c794fe13fb683b1bf6a15985c.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44797204736/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:02:38Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit df068216f388938c794fe13fb683b1bf6a15985c (request 535063-2349302-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44797204736/attempts/1"
             }
           ]
         },
