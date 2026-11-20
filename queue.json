@@ -837,8 +837,9 @@
             "name": "Jacob Tanenbaum",
             "email": "jtanenba@redhat.com"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "b1458037e182fbacd7833e0f59a58b7be3a0ccbb",
+          "pushed": "2026-11-20T02:28:29Z",
           "runs": [
             {
               "kind": "apply",
@@ -856,6 +857,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534878-2348666-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T02:28:36Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -882,6 +894,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060543.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44643581028/attempts/1"
+            },
+            {
+              "time": "2026-11-20T02:28:32Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534878 to b1458037e182fbacd7833e0f59a58b7be3a0ccbb.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44658797406/attempts/1"
+            },
+            {
+              "time": "2026-11-20T02:28:36Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit b1458037e182fbacd7833e0f59a58b7be3a0ccbb (request 534878-2348666-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44658797406/attempts/1"
             }
           ]
         }
