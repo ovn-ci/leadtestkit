@@ -312,7 +312,7 @@
             "name": "Guillaume Boutry",
             "email": "guillaume.boutry@canonical.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "c436be80d7b8c6e2ebf4cbae2373596ef4f15123",
           "pushed": "2026-11-20T01:46:15Z",
           "runs": [
@@ -577,6 +577,12 @@
               "time": "2026-11-20T04:45:19Z",
               "action": "check-posted",
               "detail": "success check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060575.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44674219532/attempts/1"
+            },
+            {
+              "time": "2026-11-20T04:49:44Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44674219532/attempts/1"
             }
           ]
