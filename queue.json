@@ -453,6 +453,12 @@
               "detail": "Build and Test run 44757074854, attempt 1: in_progress.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44758010698/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44757074854/attempts/1"
+            },
+            {
+              "time": "2026-11-20T14:59:13Z",
+              "action": "check-posted",
+              "detail": "warning check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060622.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44758010698/attempts/1"
             }
           ]
         },
