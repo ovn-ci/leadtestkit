@@ -421,8 +421,8 @@
               "id": 44641639230,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639230",
-              "status": "in_progress",
-              "updated": "2026-11-20T00:03:01Z",
+              "status": "queued",
+              "updated": "2026-11-20T00:13:36Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -550,6 +550,13 @@
               "detail": "Sent final email for github-robot: Checkpatch (success). Message-ID: <leadtest.534878.2348664.github-robot-checkpatch.final.1795132519.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44641535219/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639114/attempts/1"
+            },
+            {
+              "time": "2026-11-20T00:13:36Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 44641639230, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44643581028/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44641639230/attempts/1"
             }
           ]
         },
