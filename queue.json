@@ -990,8 +990,8 @@
               "id": 44661057243,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/44661057243",
-              "status": "queued",
-              "updated": "2026-11-20T02:50:01Z",
+              "status": "in_progress",
+              "updated": "2026-11-20T03:39:12Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1125,6 +1125,13 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060566.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44664083092/attempts/1"
+            },
+            {
+              "time": "2026-11-20T03:39:12Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 44661057243, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44667532719/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/44661057243/attempts/1"
             }
           ]
         }
@@ -1445,8 +1452,9 @@
             "name": "Mark Michelson",
             "email": "mmichels@redhat.com"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "2a079c5481b897d55f092dc840c64e8ae895239b",
+          "pushed": "2026-11-20T03:39:21Z",
           "runs": [
             {
               "kind": "apply",
@@ -1464,6 +1472,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534925-2348916-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T03:39:24Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -1490,6 +1509,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060551.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44653422362/attempts/1"
+            },
+            {
+              "time": "2026-11-20T03:39:22Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534925 to 2a079c5481b897d55f092dc840c64e8ae895239b.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44667532719/attempts/1"
+            },
+            {
+              "time": "2026-11-20T03:39:24Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 2a079c5481b897d55f092dc840c64e8ae895239b (request 534925-2348916-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/44667532719/attempts/1"
             }
           ]
         },
