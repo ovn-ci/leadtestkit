@@ -1343,15 +1343,23 @@
               "id": 45287858558,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287858558",
-              "status": "queued",
-              "updated": "2026-11-23T23:23:25Z",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-23T23:32:36Z",
+              "completed": "2026-11-23T23:32:36Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535559.2350768.github-robot-checkpatch.pending.1795475981.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535559.2350768.github-robot-checkpatch.final.1795475981.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
             },
             {
               "kind": "push",
@@ -1476,6 +1484,20 @@
               "detail": "Sent pending email for github-robot: ovn-kubernetes (pending). Message-ID: <leadtest.535559.2350768.github-robot-ovn-kubernetes.pending.1795475981.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45284096610/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857667/attempts/1"
+            },
+            {
+              "time": "2026-11-23T23:32:36Z",
+              "action": "workflow-updated",
+              "detail": "Checkpatch run 45287858558, attempt 1: completed: success.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45286348682/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287858558/attempts/1"
+            },
+            {
+              "time": "2026-11-23T23:32:47Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Checkpatch (success). Message-ID: <leadtest.535559.2350768.github-robot-checkpatch.final.1795475981.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45286348682/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287858558/attempts/1"
             }
           ]
         },
