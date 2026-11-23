@@ -331,8 +331,8 @@
               "id": 45259806091,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806091",
-              "status": "queued",
-              "updated": "2026-11-23T20:32:36Z",
+              "status": "in_progress",
+              "updated": "2026-11-23T21:37:54Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -347,8 +347,8 @@
               "id": 45259805980,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259805980",
-              "status": "queued",
-              "updated": "2026-11-23T20:46:59Z",
+              "status": "in_progress",
+              "updated": "2026-11-23T21:37:54Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -480,6 +480,20 @@
               "action": "workflow-updated",
               "detail": "ovn-kubernetes run 45259805980, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45261675868/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259805980/attempts/1"
+            },
+            {
+              "time": "2026-11-23T21:37:54Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45259806091, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45269376379/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806091/attempts/1"
+            },
+            {
+              "time": "2026-11-23T21:37:54Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45259805980, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45269376379/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259805980/attempts/1"
             }
           ]
