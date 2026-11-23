@@ -101,8 +101,8 @@
               "id": 45258175789,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45258175789",
-              "status": "in_progress",
-              "updated": "2026-11-23T20:22:34Z",
+              "status": "queued",
+              "updated": "2026-11-23T20:32:36Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -208,6 +208,13 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060760.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:36Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45258175789, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45258175789/attempts/1"
             }
           ]
         },
@@ -244,12 +251,51 @@
             },
             {
               "kind": "dispatch",
-              "workflow": "leadtest-checkpatch.yml",
+              "workflow": "Checkpatch",
               "file": "leadtest-checkpatch.yml",
               "correlation_id": "535538-2350700-leadtest-checkpatch-1",
-              "status": "requested",
-              "updated": "2026-11-23T20:28:57Z",
-              "pending": {},
+              "id": 45259806750,
+              "attempt": 1,
+              "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806750",
+              "status": "queued",
+              "updated": "2026-11-23T20:32:36Z",
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.535538.2350700.github-robot-checkpatch.pending.1795465147.1@ovn.org>"
+              },
+              "final": {},
+              "reply": {}
+            },
+            {
+              "kind": "push",
+              "workflow": "Build and Test",
+              "id": 45259806091,
+              "attempt": 1,
+              "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806091",
+              "status": "queued",
+              "updated": "2026-11-23T20:32:36Z",
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.535538.2350700.github-robot-build-and-test.pending.1795465147.1@ovn.org>"
+              },
+              "final": {},
+              "reply": {}
+            },
+            {
+              "kind": "push",
+              "workflow": "ovn-kubernetes",
+              "id": 45259805980,
+              "attempt": 1,
+              "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259805980",
+              "status": "in_progress",
+              "updated": "2026-11-23T20:32:36Z",
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.535538.2350700.github-robot-ovn-kubernetes.pending.1795465147.1@ovn.org>"
+              },
               "final": {},
               "reply": {}
             }
@@ -290,6 +336,66 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060758.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:36Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45259806091, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806091/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:36Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45259805980, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259805980/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:36Z",
+              "action": "workflow-updated",
+              "detail": "Checkpatch run 45259806750, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806750/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:41Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_Checkpatch linking to https://github.com/ovn-ci/ovn-test/actions/runs/45259806750.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:41Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: Checkpatch (pending). Message-ID: <leadtest.535538.2350700.github-robot-checkpatch.pending.1795465147.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806750/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:46Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/ovn-ci/ovn-test/actions/runs/45259806091.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:47Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: Build and Test (pending). Message-ID: <leadtest.535538.2350700.github-robot-build-and-test.pending.1795465147.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806091/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:52Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/45259805980.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:32:53Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: ovn-kubernetes (pending). Message-ID: <leadtest.535538.2350700.github-robot-ovn-kubernetes.pending.1795465147.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45259086960/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259805980/attempts/1"
             }
           ]
         }
