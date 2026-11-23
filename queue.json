@@ -525,6 +525,12 @@
               "detail": "Replied about github-robot: Build and Test (fail) to \"Rosemarie O'Riorden\" <rosemarie@redhat.com>. Message-ID: <leadtest.535538.2350700.github-robot-build-and-test.reply.1795465147.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45274415113/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45259806091/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:22:10Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060776.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1"
             }
           ]
         }
