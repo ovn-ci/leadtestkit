@@ -1,4 +1,177 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 535538,
+      "name": "[ovs-dev,v3,1/2] version: Append \"ASAN\"/\"UBSAN\" to binary version.",
+      "version": 3,
+      "date": "2026-11-23T20:04:14+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=535538",
+      "submitter": {
+        "name": "Rosemarie O'Riorden",
+        "email": "rosemarie@redhat.com"
+      },
+      "total": 2,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "b7c02c6f202b7e96b47ed22d12a524803a89646c",
+        "why": "default"
+      },
+      "branch": "series_535538",
+      "discovered": "2026-11-23T20:18:54Z",
+      "started": "2026-11-23T20:19:07Z",
+      "patches": [
+        {
+          "id": 2350701,
+          "number": 1,
+          "name": "[ovs-dev,v3,1/2] version: Append \"ASAN\"/\"UBSAN\" to binary version.",
+          "msgid": "<20261123200414.168971-1-rosemarie@redhat.com>",
+          "subject": "[ovs-dev] [PATCH ovn v3 1/2] version: Append \"ASAN\"/\"UBSAN\" to binary version.",
+          "sender": {
+            "name": "Rosemarie O'Riorden",
+            "email": "rosemarie@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "3ac1a971518344cc689223ca397ccfac082c6de6",
+          "pushed": "2026-11-23T20:19:20Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (b7c02c6f202b).",
+              "updated": "2026-11-23T20:19:20Z",
+              "completed": "2026-11-23T20:19:20Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535538.2350701.apply-robot.final.1795465147.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535538-2350701-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-23T20:19:23Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T20:19:06Z",
+              "action": "discovered",
+              "detail": "Found in series 535538.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:19:20Z",
+              "action": "applied",
+              "detail": "Commit 3ac1a971518344cc689223ca397ccfac082c6de6 on base main (b7c02c6f202b7e96b47ed22d12a524803a89646c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:19:22Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535538 to 3ac1a971518344cc689223ca397ccfac082c6de6.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:19:23Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 3ac1a971518344cc689223ca397ccfac082c6de6 (request 535538-2350701-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:19:24Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535538.2350701.apply-robot.final.1795465147.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350700,
+          "number": 2,
+          "name": "[ovs-dev,v3,2/2] tutorial: ovn-benchmark: Exit if ASan or UBSan.",
+          "msgid": "<20261123200414.168971-2-rosemarie@redhat.com>",
+          "subject": "[ovs-dev] [PATCH ovn v3 2/2] tutorial: ovn-benchmark: Exit if ASan or UBSan.",
+          "sender": {
+            "name": "Rosemarie O'Riorden",
+            "email": "rosemarie@redhat.com"
+          },
+          "status": "applied",
+          "sha": "5489af7704be2f7ae11a6f290af714beac1afcb3",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (b7c02c6f202b).",
+              "updated": "2026-11-23T20:19:20Z",
+              "completed": "2026-11-23T20:19:20Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535538.2350700.apply-robot.final.1795465147.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T20:19:06Z",
+              "action": "discovered",
+              "detail": "Found in series 535538.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:19:20Z",
+              "action": "applied",
+              "detail": "Commit 5489af7704be2f7ae11a6f290af714beac1afcb3 on base main (b7c02c6f202b7e96b47ed22d12a524803a89646c).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            },
+            {
+              "time": "2026-11-23T20:19:26Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535538.2350700.apply-robot.final.1795465147.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-23T20:18:54Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+        },
+        {
+          "time": "2026-11-23T20:19:06Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+        },
+        {
+          "time": "2026-11-23T20:19:18Z",
+          "action": "base-selected",
+          "detail": "main at b7c02c6f202b7e96b47ed22d12a524803a89646c: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45256449196/attempts/1"
+        }
+      ]
+    }
+  ]
 }
