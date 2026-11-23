@@ -886,8 +886,8 @@
               "id": 45278968173,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968173",
-              "status": "in_progress",
-              "updated": "2026-11-23T22:43:25Z",
+              "status": "queued",
+              "updated": "2026-11-23T22:46:50Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1014,6 +1014,13 @@
               "action": "check-posted",
               "detail": "warning check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060778.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45279418868/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:46:50Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45278968173, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45279418868/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968173/attempts/1"
             }
           ]
         },
