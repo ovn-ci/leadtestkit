@@ -824,12 +824,60 @@
             },
             {
               "kind": "dispatch",
-              "workflow": "leadtest-checkpatch.yml",
+              "workflow": "Checkpatch",
               "file": "leadtest-checkpatch.yml",
               "correlation_id": "535548-2350735-leadtest-checkpatch-1",
-              "status": "requested",
-              "updated": "2026-11-23T22:21:59Z",
-              "pending": {},
+              "id": 45278968906,
+              "attempt": 1,
+              "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968906",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "warning",
+              "details": "Warnings:\n== Checking \"patch.mbox\" ==\nWARNING: ovn-nbctl return should be checked Consider adding check or check_uuid in front.\n#49 FILE: tests/ovn-nbctl.at:3825:\novn-nbctl: no matching NAT with the match (ip4)\n\nWARNING: ovn-nbctl return should be checked Consider adding check or check_uuid in front.\n#61 FILE: tests/ovn-nbctl.at:3837:\novn-nbctl: no matching NAT with the type (snat), match (ip6)\n\nLines checked: 117, Warnings: 2, Errors: 0",
+              "updated": "2026-11-23T22:25:17Z",
+              "completed": "2026-11-23T22:25:17Z",
+              "pending": {
+                "check": "skipped",
+                "email": "skipped"
+              },
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535548.2350735.github-robot-checkpatch.final.1795470472.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.535548.2350735.github-robot-checkpatch.reply.1795470472.1@ovn.org>"
+              }
+            },
+            {
+              "kind": "push",
+              "workflow": "Build and Test",
+              "id": 45278967920,
+              "attempt": 1,
+              "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278967920",
+              "status": "queued",
+              "updated": "2026-11-23T22:25:17Z",
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.535548.2350735.github-robot-build-and-test.pending.1795470472.1@ovn.org>"
+              },
+              "final": {},
+              "reply": {}
+            },
+            {
+              "kind": "push",
+              "workflow": "ovn-kubernetes",
+              "id": 45278968173,
+              "attempt": 1,
+              "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968173",
+              "status": "queued",
+              "updated": "2026-11-23T22:25:17Z",
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.535548.2350735.github-robot-ovn-kubernetes.pending.1795470472.1@ovn.org>"
+              },
               "final": {},
               "reply": {}
             }
@@ -870,6 +918,74 @@
               "action": "dispatched",
               "detail": "leadtest-checkpatch.yml from main for commit bb23b7e3004e0fb51763bb272a6ab7cd41b98148 (request 535548-2350735-leadtest-checkpatch-1).",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:17Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45278967920, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278967920/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:17Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45278968173, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968173/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:17Z",
+              "action": "workflow-updated",
+              "detail": "Checkpatch run 45278968906, attempt 1: completed: success.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968906/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:17Z",
+              "action": "workflow-warnings",
+              "detail": "Checkpatch run 45278968906, attempt 1 passed with 1 warning:\n== Checking \"patch.mbox\" ==\nWARNING: ovn-nbctl return should be checked Consider adding check or check_uuid in front.\n#49 FILE: tests/ovn-nbctl.at:3825:\novn-nbctl: no matching NAT with the match (ip4)\n\nWARNING: ovn-nbctl return should be checked Consider adding check or check_uuid in front.\n#61 FILE: tests/ovn-nbctl.at:3837:\novn-nbctl: no matching NAT with the type (snat), match (ip6)\n\nLines checked: 117, Warnings: 2, Errors: 0",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968906/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:27Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Checkpatch (warning). Message-ID: <leadtest.535548.2350735.github-robot-checkpatch.final.1795470472.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968906/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:28Z",
+              "action": "reply-sent",
+              "detail": "Replied about github-robot: Checkpatch (warning) to \"Mark Michelson\" <mmichels@redhat.com>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535548.2350735.github-robot-checkpatch.reply.1795470472.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968906/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:28Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/ovn-ci/ovn-test/actions/runs/45278967920.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:29Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: Build and Test (pending). Message-ID: <leadtest.535548.2350735.github-robot-build-and-test.pending.1795470472.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278967920/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:34Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/45278968173.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1"
+            },
+            {
+              "time": "2026-11-23T22:25:34Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: ovn-kubernetes (pending). Message-ID: <leadtest.535548.2350735.github-robot-ovn-kubernetes.pending.1795470472.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45277350235/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968173/attempts/1"
             }
           ]
         },
