@@ -21,18 +21,8 @@
     "reports": {
       "last_month": "2026-11",
       "months": {
-        "2026-November": 60944,
+        "2026-November": 60953,
         "2026-October": 59801
-      },
-      "retry": {
-        "https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060944.html": {
-          "op": "ingest",
-          "attempts": 1,
-          "last_error": "HTTP 502 from https://patchwork.ozlabs.org/api/1.2/patches/2351396/checks/ with response \"(html page)\"",
-          "first": "2026-11-24T18:23:57Z",
-          "next": "2026-11-24T18:28:57Z",
-          "cause": "patchwork"
-        }
       }
     }
   },
