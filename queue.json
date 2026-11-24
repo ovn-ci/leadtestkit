@@ -929,8 +929,8 @@
               "id": 45311265345,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45311265345",
-              "status": "in_progress",
-              "updated": "2026-11-24T02:20:38Z",
+              "status": "queued",
+              "updated": "2026-11-24T02:28:22Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1064,6 +1064,13 @@
               "detail": "Replied about github-robot: Checkpatch (warning) to \"Mark Michelson\" <mmichels@redhat.com>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535548.2350734.github-robot-checkpatch.reply.1795470472.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45308502425/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45311265457/attempts/1"
+            },
+            {
+              "time": "2026-11-24T02:28:22Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45311265345, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45308502425/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45311265345/attempts/1"
             }
           ]
         },
