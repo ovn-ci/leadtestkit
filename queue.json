@@ -592,6 +592,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.535548.2350735.github-robot-ovn-kubernetes.final.1795470472.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45302913015/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45278968173/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:27:17Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060798.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45302913015/attempts/1"
             }
           ]
         },
@@ -811,6 +817,12 @@
               "time": "2026-11-24T01:26:55Z",
               "action": "check-posted",
               "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/45303105959.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45302913015/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:27:28Z",
+              "action": "check-posted",
+              "detail": "warning check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060799.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45302913015/attempts/1"
             }
           ]
@@ -1232,6 +1244,12 @@
               "detail": "Replied about github-robot: Build and Test (fail) to \"Rosemarie O'Riorden\" <rosemarie@redhat.com>. Message-ID: <leadtest.535559.2350768.github-robot-build-and-test.reply.1795475981.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45300960713/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:27:06Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060794.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45302913015/attempts/1"
             }
           ]
         },
