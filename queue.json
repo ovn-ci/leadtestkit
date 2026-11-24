@@ -1011,7 +1011,7 @@
             "name": "Rosemarie O'Riorden",
             "email": "rosemarie@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "fea41a3d7f74a836d3bf1acb49e8c624ef7f86a7",
           "pushed": "2026-11-23T23:19:51Z",
           "runs": [
@@ -1286,6 +1286,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.535559.2350768.github-robot-ovn-kubernetes.final.1795475981.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45306681179/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857667/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:54:34Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45306681179/attempts/1"
             }
           ]
         },
