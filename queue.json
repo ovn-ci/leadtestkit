@@ -977,8 +977,9 @@
             "name": "Rosemarie O'Riorden",
             "email": "rosemarie@redhat.com"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "55b2a18a7916a9082e8bad3761dca696c7eac1cb",
+          "pushed": "2026-11-24T00:01:15Z",
           "runs": [
             {
               "kind": "apply",
@@ -996,6 +997,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535559-2350769-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-24T00:01:18Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -1022,6 +1034,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060783.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45286348682/attempts/1"
+            },
+            {
+              "time": "2026-11-24T00:01:16Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535559 to 55b2a18a7916a9082e8bad3761dca696c7eac1cb.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45290737701/attempts/1"
+            },
+            {
+              "time": "2026-11-24T00:01:18Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 55b2a18a7916a9082e8bad3761dca696c7eac1cb (request 535559-2350769-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45290737701/attempts/1"
             }
           ]
         }
