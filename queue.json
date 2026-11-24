@@ -1129,8 +1129,8 @@
               "id": 45293692328,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45293692328",
-              "status": "queued",
-              "updated": "2026-11-24T00:04:23Z",
+              "status": "in_progress",
+              "updated": "2026-11-24T01:06:33Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1250,6 +1250,13 @@
               "detail": "Build and Test run 45293692292, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45294862378/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45293692292/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:06:33Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45293692328, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45300960713/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45293692328/attempts/1"
             }
           ]
         }
