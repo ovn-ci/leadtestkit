@@ -927,7 +927,7 @@
             "name": "Mark Michelson",
             "email": "mmichels@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "b66003b30eda50ce4163adae9e9e59655c0506a1",
           "pushed": "2026-11-24T02:17:18Z",
           "comments_seen": 3795425,
@@ -1211,6 +1211,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.535548.2350734.github-robot-ovn-kubernetes.final.1795470472.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45327925497/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45311265345/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:57:17Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45327925497/attempts/1"
             }
           ]
         },
