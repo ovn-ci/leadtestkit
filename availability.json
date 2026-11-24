@@ -1,7 +1,13 @@
 {
   "schema": 14,
   "since": "2026-11-19T21:25:04Z",
-  "failing": {},
+  "failing": {
+    "patchwork": {
+      "service": "patchwork",
+      "since": "2026-11-24T18:23:57Z",
+      "reason": "HTTP 502 from https://patchwork.ozlabs.org/api/1.2/patches/2351396/checks/ with response \"(html page)\""
+    }
+  },
   "periods": [
     {
       "service": "patchwork",

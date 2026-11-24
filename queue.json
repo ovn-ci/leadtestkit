@@ -218,6 +218,12 @@
               "detail": "ovn-kubernetes run 45454213870, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45456475614/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45454213870/attempts/1"
+            },
+            {
+              "time": "2026-11-24T18:23:57Z",
+              "action": "check-failed",
+              "detail": "Check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060944.html failed: HTTP 502 from https://patchwork.ozlabs.org/api/1.2/patches/2351396/checks/ with response \"(html page)\"",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45456475614/attempts/1"
             }
           ]
         },
