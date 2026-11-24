@@ -242,6 +242,24 @@
               "action": "check-posted",
               "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/45498129085.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45503009734/attempts/1"
+            },
+            {
+              "time": "2026-11-24T22:53:10Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060962.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45503009734/attempts/1"
+            },
+            {
+              "time": "2026-11-24T22:53:23Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060963.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45503009734/attempts/1"
+            },
+            {
+              "time": "2026-11-24T22:53:51Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060967.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45503009734/attempts/1"
             }
           ]
         }
