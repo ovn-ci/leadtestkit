@@ -109,15 +109,23 @@
               "id": 45423527585,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45423527585",
-              "status": "in_progress",
-              "updated": "2026-11-24T15:43:17Z",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-24T17:28:41Z",
+              "completed": "2026-11-24T17:28:41Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535711.2351290.github-robot-ovn-kubernetes.pending.1795533357.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535711.2351290.github-robot-ovn-kubernetes.final.1795533357.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
             }
           ],
           "decisions": [
@@ -257,6 +265,20 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060942.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45430943345/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:28:41Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45423527585, attempt 1: completed: success.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45448269849/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45423527585/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:28:43Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.535711.2351290.github-robot-ovn-kubernetes.final.1795533357.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45448269849/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45423527585/attempts/1"
             }
           ]
         }
