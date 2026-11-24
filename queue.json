@@ -848,15 +848,24 @@
               "id": 45287857537,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537",
-              "status": "in_progress",
-              "updated": "2026-11-24T00:34:25Z",
+              "status": "completed",
+              "conclusion": "failure",
+              "result": "fail",
+              "updated": "2026-11-24T01:03:02Z",
+              "completed": "2026-11-24T01:03:02Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535559.2350768.github-robot-build-and-test.pending.1795475981.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535559.2350768.github-robot-build-and-test.final.1795475981.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.535559.2350768.github-robot-build-and-test.reply.1795475981.1@ovn.org>"
+              }
             },
             {
               "kind": "push",
@@ -1012,6 +1021,27 @@
               "detail": "ovn-kubernetes run 45287857667, attempt 1: in_progress.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45294862378/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857667/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:03:02Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45287857537, attempt 1: completed: failure.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45300960713/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:03:14Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Build and Test (fail). Message-ID: <leadtest.535559.2350768.github-robot-build-and-test.final.1795475981.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45300960713/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:03:14Z",
+              "action": "reply-sent",
+              "detail": "Replied about github-robot: Build and Test (fail) to \"Rosemarie O'Riorden\" <rosemarie@redhat.com>. Message-ID: <leadtest.535559.2350768.github-robot-build-and-test.reply.1795475981.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45300960713/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537/attempts/1"
             }
           ]
         },
