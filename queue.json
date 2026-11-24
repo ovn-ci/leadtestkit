@@ -36,7 +36,7 @@
           "status": "pushed",
           "sha": "c34e282a4cb6dd3ce009ca9503bfd9801d79311b",
           "pushed": "2026-11-24T22:08:58Z",
-          "comments_pending": true,
+          "comments_seen": 3796084,
           "runs": [
             {
               "kind": "apply",
@@ -114,6 +114,7 @@
               "status": "in_progress",
               "updated": "2026-11-24T22:37:10Z",
               "pending": {
+                "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535788.2351513.github-robot-ovn-kubernetes.pending.1795558130.1@ovn.org>"
               },
@@ -235,6 +236,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.535788.2351513.github-robot-build-and-test.final.1795558130.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45503009734/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45498129088/attempts/1"
+            },
+            {
+              "time": "2026-11-24T22:52:59Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/45498129085.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45503009734/attempts/1"
             }
           ]
         }
