@@ -303,6 +303,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45294862378/attempts/1"
+            },
+            {
+              "time": "2026-11-24T01:03:24Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060793.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45300960713/attempts/1"
             }
           ]
         },
