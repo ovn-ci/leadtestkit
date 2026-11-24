@@ -33,7 +33,7 @@
             "name": "Howon Park",
             "email": "hwpark@gabia.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "9b5b4b8b06ed153f2bd85f272570bf159961cd60",
           "pushed": "2026-11-24T15:16:05Z",
           "runs": [
@@ -279,6 +279,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.535711.2351290.github-robot-ovn-kubernetes.final.1795533357.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45448269849/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45423527585/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:33:48Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45448269849/attempts/1"
             }
           ]
         }
@@ -301,6 +307,26 @@
           "action": "base-selected",
           "detail": "main at d5981d9dc5a22024269c80f40aa883333e73eb0a: default.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45422257779/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 535745,
+      "name": "",
+      "date": "",
+      "submitter": {
+        "email": ""
+      },
+      "total": 0,
+      "status": "new",
+      "discovered": "2026-11-24T17:32:24Z",
+      "patches": [],
+      "decisions": [
+        {
+          "time": "2026-11-24T17:32:24Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45448269849/attempts/1"
         }
       ]
     }
