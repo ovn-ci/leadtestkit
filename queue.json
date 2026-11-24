@@ -13,21 +13,90 @@
       },
       "total": 3,
       "cover_id": 2351395,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "d5981d9dc5a22024269c80f40aa883333e73eb0a",
+        "why": "default"
+      },
+      "branch": "series_535745",
       "discovered": "2026-11-24T17:32:24Z",
+      "started": "2026-11-24T17:56:58Z",
       "patches": [
         {
           "id": 2351396,
           "number": 1,
           "name": "[ovs-dev,v3,1/3] host-if-monitor: Drop stale mapping on rename.",
           "msgid": "<20261124172926.1900731-2-guillaume.boutry@canonical.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn v3 1/3] host-if-monitor: Drop stale mapping on rename.",
+          "sender": {
+            "name": "Guillaume Boutry",
+            "email": "guillaume.boutry@canonical.com"
+          },
+          "status": "pushed",
+          "sha": "2a5aa67f701cad0c8d3007e07bef8eee533d524b",
+          "pushed": "2026-11-24T17:57:20Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (d5981d9dc5a2).",
+              "updated": "2026-11-24T17:57:20Z",
+              "completed": "2026-11-24T17:57:20Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535745.2351396.apply-robot.final.1795543018.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535745-2351396-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-24T17:57:23Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-24T17:55:51Z",
               "action": "discovered",
               "detail": "Found in series 535745.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45451026127/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:20Z",
+              "action": "applied",
+              "detail": "Commit 2a5aa67f701cad0c8d3007e07bef8eee533d524b on base main (d5981d9dc5a22024269c80f40aa883333e73eb0a).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:22Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535745 to 2a5aa67f701cad0c8d3007e07bef8eee533d524b.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:23Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 2a5aa67f701cad0c8d3007e07bef8eee533d524b (request 535745-2351396-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:26Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535745.2351396.apply-robot.final.1795543018.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
             }
           ]
         },
@@ -36,13 +105,50 @@
           "number": 2,
           "name": "[ovs-dev,v3,2/3] neighbor-exchange: Rate-limit error retries.",
           "msgid": "<20261124172926.1900731-3-guillaume.boutry@canonical.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn v3 2/3] neighbor-exchange: Rate-limit error retries.",
+          "sender": {
+            "name": "Guillaume Boutry",
+            "email": "guillaume.boutry@canonical.com"
+          },
+          "status": "applied",
+          "sha": "e9bd3f46db71d9f647e78d03f99131ff842841b8",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (d5981d9dc5a2).",
+              "updated": "2026-11-24T17:57:20Z",
+              "completed": "2026-11-24T17:57:20Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535745.2351397.apply-robot.final.1795543018.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-24T17:55:51Z",
               "action": "discovered",
               "detail": "Found in series 535745.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45451026127/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:20Z",
+              "action": "applied",
+              "detail": "Commit e9bd3f46db71d9f647e78d03f99131ff842841b8 on base main (d5981d9dc5a22024269c80f40aa883333e73eb0a).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:26Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535745.2351397.apply-robot.final.1795543018.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
             }
           ]
         },
@@ -51,13 +157,50 @@
           "number": 3,
           "name": "[ovs-dev,v3,3/3] neighbor-exchange: Keep state after failed dumps.",
           "msgid": "<20261124172926.1900731-4-guillaume.boutry@canonical.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn v3 3/3] neighbor-exchange: Keep state after failed dumps.",
+          "sender": {
+            "name": "Guillaume Boutry",
+            "email": "guillaume.boutry@canonical.com"
+          },
+          "status": "applied",
+          "sha": "9d54c6bbf4c41369e03129e09d96eab94e019ad3",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (d5981d9dc5a2).",
+              "updated": "2026-11-24T17:57:20Z",
+              "completed": "2026-11-24T17:57:20Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535745.2351398.apply-robot.final.1795543018.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-24T17:55:51Z",
               "action": "discovered",
               "detail": "Found in series 535745.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45451026127/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:20Z",
+              "action": "applied",
+              "detail": "Commit 9d54c6bbf4c41369e03129e09d96eab94e019ad3 on base main (d5981d9dc5a22024269c80f40aa883333e73eb0a).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
+            },
+            {
+              "time": "2026-11-24T17:57:28Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535745.2351398.apply-robot.final.1795543018.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
             }
           ]
         }
@@ -74,6 +217,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 3 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45451026127/attempts/1"
+        },
+        {
+          "time": "2026-11-24T17:57:18Z",
+          "action": "base-selected",
+          "detail": "main at d5981d9dc5a22024269c80f40aa883333e73eb0a: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45453740530/attempts/1"
         }
       ]
     }
