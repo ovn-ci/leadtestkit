@@ -1313,11 +1313,10 @@
               "kind": "push",
               "workflow": "ovn-kubernetes",
               "id": 45325340125,
-              "attempt": 1,
+              "attempt": 2,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45325340125",
-              "status": "requested",
-              "conclusion": "cancelled",
-              "updated": "2026-11-24T08:19:53Z",
+              "status": "in_progress",
+              "updated": "2026-11-24T08:24:26Z",
               "min_attempt": 1,
               "auto_reruns": 1,
               "pending": {
@@ -1487,6 +1486,13 @@
               "detail": "Restarted cancelled ovn-kubernetes run 45325340125, attempt 1.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45353714995/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45325340125/attempts/1"
+            },
+            {
+              "time": "2026-11-24T08:24:26Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45325340125, attempt 2: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45353714995/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45325340125/attempts/2"
             }
           ]
         }
