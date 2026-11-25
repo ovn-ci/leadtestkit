@@ -85,12 +85,16 @@
               "kind": "push",
               "workflow": "Build and Test",
               "id": 45287857537,
-              "attempt": 1,
+              "attempt": 2,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537",
-              "status": "requested",
-              "updated": "2026-11-25T00:49:01Z",
+              "status": "in_progress",
+              "updated": "2026-11-25T00:54:07Z",
               "min_attempt": 1,
-              "pending": {},
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.535559.2350768.github-robot-build-and-test.pending.1795475981.2@ovn.org>"
+              },
               "final": {},
               "reply": {}
             },
@@ -334,6 +338,26 @@
               "action": "recheck-started",
               "detail": "1 reruns accepted; 0 workflows queued for dispatch.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45519803488/attempts/1"
+            },
+            {
+              "time": "2026-11-25T00:54:07Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45287857537, attempt 2: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45519803488/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537/attempts/2"
+            },
+            {
+              "time": "2026-11-25T00:54:23Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/ovn-ci/ovn-test/actions/runs/45287857537.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45519803488/attempts/1"
+            },
+            {
+              "time": "2026-11-25T00:54:24Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: Build and Test (pending). Message-ID: <leadtest.535559.2350768.github-robot-build-and-test.pending.1795475981.2@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45519803488/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537/attempts/2"
             }
           ]
         },
