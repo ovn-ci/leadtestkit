@@ -32,7 +32,7 @@
             "name": "Lucas Vargas Dias",
             "email": "lucas.vdias@magalu.cloud"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "7c0e69fe4fb3b4f9c948474ac0296678ea14331a",
           "pushed": "2026-11-25T11:12:31Z",
           "runs": [
@@ -278,6 +278,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.535901.2351928.github-robot-ovn-kubernetes.final.1795605105.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45623301126/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45602280604/attempts/1"
+            },
+            {
+              "time": "2026-11-25T13:43:16Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
             }
           ]
         },
@@ -710,6 +716,126 @@
           "action": "base-selected",
           "detail": "main at 99671658f36f672219cd209978edc84fee5b6717: default.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45604187222/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 535947,
+      "name": "[ovs-dev] northd: Use the common zone and skip gateway mtu checks on offload.",
+      "version": 1,
+      "date": "2026-11-25T13:17:55+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=535947",
+      "submitter": {
+        "name": "MJ Ponsonby",
+        "email": "mj.ponsonby@canonical.com"
+      },
+      "total": 1,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "99671658f36f672219cd209978edc84fee5b6717",
+        "why": "default"
+      },
+      "branch": "series_535947",
+      "discovered": "2026-11-25T13:42:57Z",
+      "started": "2026-11-25T13:43:23Z",
+      "patches": [
+        {
+          "id": 2352054,
+          "number": 1,
+          "name": "[ovs-dev] northd: Use the common zone and skip gateway mtu checks on offload.",
+          "msgid": "<20261125131755.1825081-1-mj.ponsonby@canonical.com>",
+          "subject": "[ovs-dev] [PATCH ovn] northd: Use the common zone and skip gateway mtu checks on offload.",
+          "sender": {
+            "name": "MJ Ponsonby",
+            "email": "mj.ponsonby@canonical.com"
+          },
+          "status": "pushed",
+          "sha": "dcffb1d9b873d524440ec515af369bbcf6c4dabd",
+          "pushed": "2026-11-25T13:43:28Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (99671658f36f).",
+              "updated": "2026-11-25T13:43:28Z",
+              "completed": "2026-11-25T13:43:28Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535947.2352054.apply-robot.final.1795614203.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535947-2352054-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-25T13:43:32Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-25T13:43:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535947.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
+            },
+            {
+              "time": "2026-11-25T13:43:28Z",
+              "action": "applied",
+              "detail": "Commit dcffb1d9b873d524440ec515af369bbcf6c4dabd on base main (99671658f36f672219cd209978edc84fee5b6717).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
+            },
+            {
+              "time": "2026-11-25T13:43:30Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535947 to dcffb1d9b873d524440ec515af369bbcf6c4dabd.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
+            },
+            {
+              "time": "2026-11-25T13:43:32Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit dcffb1d9b873d524440ec515af369bbcf6c4dabd (request 535947-2352054-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
+            },
+            {
+              "time": "2026-11-25T13:43:32Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535947.2352054.apply-robot.final.1795614203.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-25T13:42:57Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
+        },
+        {
+          "time": "2026-11-25T13:43:09Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
+        },
+        {
+          "time": "2026-11-25T13:43:26Z",
+          "action": "base-selected",
+          "detail": "main at 99671658f36f672219cd209978edc84fee5b6717: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
         }
       ]
     }
