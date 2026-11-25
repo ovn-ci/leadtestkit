@@ -209,6 +209,18 @@
               "action": "check-posted",
               "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/45602280604.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45604187222/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:35:48Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060977.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45604187222/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:36:21Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060979.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45604187222/attempts/1"
             }
           ]
         },
@@ -267,6 +279,12 @@
               "action": "reply-sent",
               "detail": "Replied about apply-robot (fail) to \"Lucas Vargas Dias\" <lucas.vdias@magalu.cloud>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535901.2351929.apply-robot.reply.1795605105.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:36:07Z",
+              "action": "check-posted",
+              "detail": "fail check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060978.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45604187222/attempts/1"
             }
           ]
         }
