@@ -9849,9 +9849,7 @@
           "status": "done",
           "sha": "9cb280eb1f347154768454fadaccc65385875360",
           "pushed": "2026-11-25T01:15:46Z",
-          "comments_seen": 3796136,
-          "comments_pending": true,
-          "comments_pending_since": "2026-11-25T11:42:01Z",
+          "comments_seen": 3796432,
           "runs": [
             {
               "kind": "apply",
