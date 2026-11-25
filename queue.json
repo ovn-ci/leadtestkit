@@ -1,4 +1,25 @@
 {
   "schema": 16,
-  "series": []
+  "series": [
+    {
+      "id": 535901,
+      "name": "",
+      "date": "",
+      "submitter": {
+        "email": ""
+      },
+      "total": 0,
+      "status": "new",
+      "discovered": "2026-11-25T10:32:40Z",
+      "patches": [],
+      "decisions": [
+        {
+          "time": "2026-11-25T10:32:40Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45593903816/attempts/1"
+        }
+      ]
+    }
+  ]
 }
