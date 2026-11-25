@@ -945,6 +945,7 @@
               "status": "queued",
               "updated": "2026-11-25T15:12:31Z",
               "pending": {
+                "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535962.2352092.github-robot-build-and-test.pending.1795618239.1@ovn.org>"
               },
@@ -960,6 +961,7 @@
               "status": "queued",
               "updated": "2026-11-25T15:17:06Z",
               "pending": {
+                "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535962.2352092.github-robot-ovn-kubernetes.pending.1795618239.1@ovn.org>"
               },
@@ -1081,6 +1083,18 @@
               "detail": "ovn-kubernetes run 45638509969, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45639237524/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45638509969/attempts/1"
+            },
+            {
+              "time": "2026-11-25T15:28:11Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/ovn-ci/ovn-test/actions/runs/45638509982.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45642006664/attempts/1"
+            },
+            {
+              "time": "2026-11-25T15:28:31Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_ovn-kubernetes linking to https://github.com/ovn-ci/ovn-test/actions/runs/45638509969.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45642006664/attempts/1"
             }
           ]
         }
