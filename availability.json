@@ -1,13 +1,7 @@
 {
   "schema": 15,
   "since": "2026-11-19T21:25:04Z",
-  "failing": {
-    "patchwork": {
-      "service": "patchwork",
-      "since": "2026-11-25T02:55:43Z",
-      "reason": "HTTP 502 from https://patchwork.ozlabs.org/api/1.2/series/?order=-id&per_page=50&project=ovn with response \"(html page)\""
-    }
-  },
+  "failing": {},
   "periods": [
     {
       "service": "patchwork",
@@ -1003,6 +997,12 @@
       "service": "patchwork",
       "since": "2026-11-25T02:51:08Z",
       "until": "2026-11-25T02:54:23Z",
+      "reason": "HTTP 502 from https://patchwork.ozlabs.org/api/1.2/series/?order=-id&per_page=50&project=ovn with response \"(html page)\""
+    },
+    {
+      "service": "patchwork",
+      "since": "2026-11-25T02:55:43Z",
+      "until": "2026-11-25T02:59:26Z",
       "reason": "HTTP 502 from https://patchwork.ozlabs.org/api/1.2/series/?order=-id&per_page=50&project=ovn with response \"(html page)\""
     }
   ]
