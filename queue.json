@@ -3,21 +3,178 @@
   "series": [
     {
       "id": 535901,
-      "name": "",
-      "date": "",
+      "name": "[ovs-dev,v0,1/2] northd: Keep the remote binding of remote ports with is_router.",
+      "date": "2026-11-25T10:21:26+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=535901",
       "submitter": {
-        "email": ""
+        "name": "Lucas Vargas Dias",
+        "email": "lucas.vdias@magalu.cloud"
       },
-      "total": 0,
-      "status": "new",
+      "total": 2,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "99671658f36f672219cd209978edc84fee5b6717",
+        "why": "default"
+      },
+      "branch": "series_535901",
       "discovered": "2026-11-25T10:32:40Z",
-      "patches": [],
+      "started": "2026-11-25T11:11:45Z",
+      "patches": [
+        {
+          "id": 2351928,
+          "number": 1,
+          "name": "[ovs-dev,v0,1/2] northd: Keep the remote binding of remote ports with is_router.",
+          "msgid": "<20261125102126.18392-1-lucas.vdias@magalu.cloud>",
+          "subject": "[ovs-dev] [PATCH ovn v0 1/2] northd: Keep the remote binding of remote ports with is_router.",
+          "sender": {
+            "name": "Lucas Vargas Dias",
+            "email": "lucas.vdias@magalu.cloud"
+          },
+          "status": "pushed",
+          "sha": "7c0e69fe4fb3b4f9c948474ac0296678ea14331a",
+          "pushed": "2026-11-25T11:12:31Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (99671658f36f).",
+              "updated": "2026-11-25T11:12:31Z",
+              "completed": "2026-11-25T11:12:31Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535901.2351928.apply-robot.final.1795605105.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535901-2351928-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-25T11:12:35Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-25T11:11:34Z",
+              "action": "discovered",
+              "detail": "Found in series 535901.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:12:31Z",
+              "action": "applied",
+              "detail": "Commit 7c0e69fe4fb3b4f9c948474ac0296678ea14331a on base main (99671658f36f672219cd209978edc84fee5b6717).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:12:33Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535901 to 7c0e69fe4fb3b4f9c948474ac0296678ea14331a.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:12:35Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 7c0e69fe4fb3b4f9c948474ac0296678ea14331a (request 535901-2351928-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:12:35Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535901.2351928.apply-robot.final.1795605105.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351929,
+          "number": 2,
+          "name": "[ovs-dev,v0,2/2] ic: Add option to mark remote router ports with is_router.",
+          "msgid": "<20261125102146.19712-1-lucas.vdias@magalu.cloud>",
+          "subject": "[ovs-dev] [PATCH ovn v0 2/2] ic: Add option to mark remote router ports with is_router.",
+          "sender": {
+            "name": "Lucas Vargas Dias",
+            "email": "lucas.vdias@magalu.cloud"
+          },
+          "status": "apply-failed",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "fail",
+              "details": "Failed to apply on top of main (99671658f36f):\n\nApplying: ic: Add option to mark remote router ports with is_router.\nPatch failed at 0001 ic: Add option to mark remote router ports with is_router.\n\nerror: sha1 information is lacking or useless (ovn-nb.xml).\nerror: could not build fake ancestor",
+              "updated": "2026-11-25T11:12:31Z",
+              "completed": "2026-11-25T11:12:31Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535901.2351929.apply-robot.final.1795605105.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.535901.2351929.apply-robot.reply.1795605105.1@ovn.org>"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-25T11:11:34Z",
+              "action": "discovered",
+              "detail": "Found in series 535901.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:12:31Z",
+              "action": "apply-failed",
+              "detail": "Failed to apply on top of main (99671658f36f):\n\nApplying: ic: Add option to mark remote router ports with is_router.\nPatch failed at 0001 ic: Add option to mark remote router ports with is_router.\n\nerror: sha1 information is lacking or useless (ovn-nb.xml).\nerror: could not build fake ancestor",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:12:36Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (fail). Message-ID: <leadtest.535901.2351929.apply-robot.final.1795605105.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:12:38Z",
+              "action": "reply-sent",
+              "detail": "Replied about apply-robot (fail) to \"Lucas Vargas Dias\" <lucas.vdias@magalu.cloud>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535901.2351929.apply-robot.reply.1795605105.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+            }
+          ]
+        }
+      ],
       "decisions": [
         {
           "time": "2026-11-25T10:32:40Z",
           "action": "discovered",
           "detail": "Found in Patchwork.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45593903816/attempts/1"
+        },
+        {
+          "time": "2026-11-25T11:11:34Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
+        },
+        {
+          "time": "2026-11-25T11:12:29Z",
+          "action": "base-selected",
+          "detail": "main at 99671658f36f672219cd209978edc84fee5b6717: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45601822606/attempts/1"
         }
       ]
     }
