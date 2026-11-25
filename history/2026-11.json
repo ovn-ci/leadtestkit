@@ -1,5 +1,5 @@
 {
-  "schema": 14,
+  "schema": 15,
   "series": [
     {
       "id": 534827,
@@ -7576,6 +7576,8 @@
           "status": "done",
           "sha": "fea41a3d7f74a836d3bf1acb49e8c624ef7f86a7",
           "pushed": "2026-11-23T23:19:51Z",
+          "comments_pending": true,
+          "comments_pending_since": "2026-11-25T00:44:54Z",
           "runs": [
             {
               "kind": "apply",
