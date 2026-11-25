@@ -743,6 +743,51 @@
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45625867190/attempts/1"
         }
       ]
+    },
+    {
+      "id": 535962,
+      "name": "[ovs-dev,v3] nbctl: Fix lr-policy-add with priority 0.",
+      "version": 3,
+      "date": "2026-11-25T14:09:13+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=535962",
+      "submitter": {
+        "name": "Mark Michelson",
+        "email": "mmichels@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-25T14:14:11Z",
+      "patches": [
+        {
+          "id": 2352092,
+          "number": 1,
+          "name": "[ovs-dev,v3] nbctl: Fix lr-policy-add with priority 0.",
+          "msgid": "<20261125140917.644252-1-mmichels@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-25T14:14:17Z",
+              "action": "discovered",
+              "detail": "Found in series 535962.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45628403209/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-25T14:14:11Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45628403209/attempts/1"
+        },
+        {
+          "time": "2026-11-25T14:14:17Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45628403209/attempts/1"
+        }
+      ]
     }
   ]
 }
