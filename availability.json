@@ -1027,7 +1027,7 @@
   "patchwork_hourly_tries": [
     {
       "hour": "2026-11-25T04:00:00Z",
-      "tries": 36,
+      "tries": 39,
       "failed": 26
     }
   ]
