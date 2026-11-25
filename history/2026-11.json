@@ -8270,6 +8270,8 @@
           "status": "done",
           "sha": "9b5b4b8b06ed153f2bd85f272570bf159961cd60",
           "pushed": "2026-11-24T15:16:05Z",
+          "comments_pending": true,
+          "comments_pending_since": "2026-11-25T01:32:17Z",
           "runs": [
             {
               "kind": "apply",
