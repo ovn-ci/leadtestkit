@@ -33,7 +33,7 @@
             "name": "Rosemarie O'Riorden",
             "email": "rosemarie@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "fea41a3d7f74a836d3bf1acb49e8c624ef7f86a7",
           "pushed": "2026-11-25T00:49:01Z",
           "comments_seen": 3796133,
@@ -380,6 +380,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.535559.2350768.github-robot-build-and-test.final.1795475981.2@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45287857537/attempts/2"
+            },
+            {
+              "time": "2026-11-25T01:15:24Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
             }
           ]
         },
@@ -679,6 +685,126 @@
           "action": "done",
           "detail": "All patches and reports are complete.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45315774488/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 535804,
+      "name": "[ovs-dev] controller: Avoid quadratic patch port lookup in patch_run().",
+      "version": 1,
+      "date": "2026-11-25T01:11:45+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=535804",
+      "submitter": {
+        "name": "Howon Park",
+        "email": "hwpark@gabia.com"
+      },
+      "total": 1,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "d5981d9dc5a22024269c80f40aa883333e73eb0a",
+        "why": "default"
+      },
+      "branch": "series_535804",
+      "discovered": "2026-11-25T01:13:34Z",
+      "started": "2026-11-25T01:15:31Z",
+      "patches": [
+        {
+          "id": 2351598,
+          "number": 1,
+          "name": "[ovs-dev] controller: Avoid quadratic patch port lookup in patch_run().",
+          "msgid": "<20261125011145.43774-1-hwpark@gabia.com>",
+          "subject": "[ovs-dev] [PATCH ovn] controller: Avoid quadratic patch port lookup in patch_run().",
+          "sender": {
+            "name": "Howon Park",
+            "email": "hwpark@gabia.com"
+          },
+          "status": "pushed",
+          "sha": "9cb280eb1f347154768454fadaccc65385875360",
+          "pushed": "2026-11-25T01:15:46Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (d5981d9dc5a2).",
+              "updated": "2026-11-25T01:15:46Z",
+              "completed": "2026-11-25T01:15:46Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535804.2351598.apply-robot.final.1795569331.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535804-2351598-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-25T01:15:50Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-25T01:15:24Z",
+              "action": "discovered",
+              "detail": "Found in series 535804.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
+            },
+            {
+              "time": "2026-11-25T01:15:46Z",
+              "action": "applied",
+              "detail": "Commit 9cb280eb1f347154768454fadaccc65385875360 on base main (d5981d9dc5a22024269c80f40aa883333e73eb0a).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
+            },
+            {
+              "time": "2026-11-25T01:15:47Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535804 to 9cb280eb1f347154768454fadaccc65385875360.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
+            },
+            {
+              "time": "2026-11-25T01:15:50Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 9cb280eb1f347154768454fadaccc65385875360 (request 535804-2351598-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
+            },
+            {
+              "time": "2026-11-25T01:15:50Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535804.2351598.apply-robot.final.1795569331.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-25T01:13:34Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
+        },
+        {
+          "time": "2026-11-25T01:15:24Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
+        },
+        {
+          "time": "2026-11-25T01:15:44Z",
+          "action": "base-selected",
+          "detail": "main at d5981d9dc5a22024269c80f40aa883333e73eb0a: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45523650196/attempts/1"
         }
       ]
     }
