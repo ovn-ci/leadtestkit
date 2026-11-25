@@ -1,13 +1,7 @@
 {
   "schema": 16,
   "since": "2026-11-19T21:25:04Z",
-  "failing": {
-    "patchwork": {
-      "service": "patchwork",
-      "since": "2026-11-25T17:54:36Z",
-      "reason": "events series-completed page 1: HTTP 502 from https://patchwork.ozlabs.org/api/1.2/events/?category=series-completed&order=-id&per_page=1024&project=ovn&page=1 with response \"(html page)\""
-    }
-  },
+  "failing": {},
   "periods": [
     {
       "service": "patchwork",
@@ -1208,6 +1202,12 @@
       "since": "2026-11-25T16:10:56Z",
       "until": "2026-11-25T17:30:14Z",
       "reason": "events series-completed page 1: HTTP 502 from https://patchwork.ozlabs.org/api/1.2/events/?category=series-completed&order=-id&per_page=1024&project=ovn&page=1 with response \"(html page)\""
+    },
+    {
+      "service": "patchwork",
+      "since": "2026-11-25T17:54:36Z",
+      "until": "2026-11-25T18:00:41Z",
+      "reason": "events series-completed page 1: HTTP 502 from https://patchwork.ozlabs.org/api/1.2/events/?category=series-completed&order=-id&per_page=1024&project=ovn&page=1 with response \"(html page)\""
     }
   ],
   "patchwork_hourly_tries": [
@@ -1280,6 +1280,11 @@
       "hour": "2026-11-25T17:00:00Z",
       "tries": 67,
       "failed": 43
+    },
+    {
+      "hour": "2026-11-25T18:00:00Z",
+      "tries": 4,
+      "failed": 1
     }
   ]
 }
