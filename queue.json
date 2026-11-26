@@ -34,11 +34,10 @@
             "name": "Dumitru Ceara",
             "email": "dceara@redhat.com"
           },
-          "status": "done",
+          "status": "pushed",
           "sha": "7739af85b6a17bde0f7e1e4076f84d7173f9a7ec",
-          "pushed": "2026-11-26T15:17:55Z",
-          "comments_pending": true,
-          "comments_pending_since": "2026-11-26T15:26:48Z",
+          "pushed": "2026-11-26T19:28:43Z",
+          "comments_seen": 3797463,
           "runs": [
             {
               "kind": "apply",
@@ -112,24 +111,12 @@
               "id": 45848062255,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45848062255",
-              "status": "completed",
-              "conclusion": "failure",
-              "result": "fail",
-              "updated": "2026-11-26T17:54:38Z",
-              "completed": "2026-11-26T17:54:38Z",
-              "pending": {
-                "check": "posted",
-                "email": "sent",
-                "message_id": "<leadtest.536217.2352776.github-robot-ovn-kubernetes.pending.1795706254.1@ovn.org>"
-              },
-              "final": {
-                "email": "sent",
-                "message_id": "<leadtest.536217.2352776.github-robot-ovn-kubernetes.final.1795706254.1@ovn.org>"
-              },
-              "reply": {
-                "email": "sent",
-                "message_id": "<leadtest.536217.2352776.github-robot-ovn-kubernetes.reply.1795706254.1@ovn.org>"
-              }
+              "status": "requested",
+              "updated": "2026-11-26T19:28:43Z",
+              "min_attempt": 1,
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -309,6 +296,25 @@
               "action": "check-posted",
               "detail": "fail check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061062.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45873678193/attempts/1"
+            },
+            {
+              "time": "2026-11-26T19:28:32Z",
+              "action": "recheck-requested",
+              "detail": "Comment 3797463: recheck github-robot-_ovn-kubernetes.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
+            },
+            {
+              "time": "2026-11-26T19:28:43Z",
+              "action": "rerun",
+              "detail": "Restarted github-robot: ovn-kubernetes run 45848062255 after attempt 1.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45848062255/attempts/1"
+            },
+            {
+              "time": "2026-11-26T19:28:43Z",
+              "action": "recheck-started",
+              "detail": "1 reruns accepted; 0 workflows queued for dispatch.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
             }
           ]
         },
@@ -1187,21 +1193,34 @@
         "email": "amusil@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "skipped",
+      "reason": "already applied on main",
       "discovered": "2026-11-26T16:26:28Z",
+      "finished": "2026-11-26T19:28:54Z",
       "patches": [
         {
           "id": 2352822,
           "number": 1,
           "name": "[ovs-dev] ovs: Bump submodule to the tip of main.",
           "msgid": "<20261126161734.2117924-1-amusil@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn] ovs: Bump submodule to the tip of main.",
+          "sender": {
+            "name": "Ales Musil",
+            "email": "amusil@redhat.com"
+          },
+          "status": "skipped",
           "decisions": [
             {
               "time": "2026-11-26T16:26:57Z",
               "action": "discovered",
               "detail": "Found in series 536234.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
+            },
+            {
+              "time": "2026-11-26T19:28:55Z",
+              "action": "skipped",
+              "detail": "Series skipped: already applied on main",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
             }
           ]
         }
@@ -1218,6 +1237,18 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
+        },
+        {
+          "time": "2026-11-26T19:28:55Z",
+          "action": "base-selected",
+          "detail": "main at ab184f7a60c67b172c637ecece6774f573e79c45: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
+        },
+        {
+          "time": "2026-11-26T19:28:55Z",
+          "action": "skipped",
+          "detail": "already applied on main",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
         }
       ]
     }
