@@ -6,7 +6,7 @@
     "project": "ovn",
     "test_repo": "github.com/ovn-ci/ovn-test"
   },
-  "tools_synced": "2026-11-19T21:25:04Z",
+  "tools_synced": "2026-11-26T21:27:22Z",
   "events": {
     "series-completed": 5454968
   },
