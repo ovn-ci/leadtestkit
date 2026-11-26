@@ -1033,6 +1033,96 @@
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
         }
       ]
+    },
+    {
+      "id": 536230,
+      "name": "[ovs-dev,branch-26.03] ovs: Bump submodule to the tip of branch-3.7.",
+      "version": 1,
+      "date": "2026-11-26T16:09:04+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=536230",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-26T16:13:10Z",
+      "patches": [
+        {
+          "id": 2352818,
+          "number": 1,
+          "name": "[ovs-dev,branch-26.03] ovs: Bump submodule to the tip of branch-3.7.",
+          "msgid": "<20261126160904.2107458-1-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-26T16:13:16Z",
+              "action": "discovered",
+              "detail": "Found in series 536230.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T16:13:10Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+        },
+        {
+          "time": "2026-11-26T16:13:16Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 536231,
+      "name": "[ovs-dev,branch-26.09] ovs: Bump submodule to the tip of branch-4.0.",
+      "version": 1,
+      "date": "2026-11-26T16:09:26+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=536231",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-26T16:13:10Z",
+      "patches": [
+        {
+          "id": 2352819,
+          "number": 1,
+          "name": "[ovs-dev,branch-26.09] ovs: Bump submodule to the tip of branch-4.0.",
+          "msgid": "<20261126160926.2107768-1-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-26T16:13:22Z",
+              "action": "discovered",
+              "detail": "Found in series 536231.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T16:13:10Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+        },
+        {
+          "time": "2026-11-26T16:13:22Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+        }
+      ]
     }
   ]
 }
