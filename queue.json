@@ -33,7 +33,7 @@
             "name": "Howon Park",
             "email": "hwpark@gabia.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "8c19f562728425dab1c129569dffbaa799aa2ce6",
           "pushed": "2026-11-26T01:20:24Z",
           "comments_pending": true,
@@ -289,6 +289,12 @@
               "detail": "Replied about github-robot: ovn-kubernetes (fail) to \"Howon Park\" <hwpark@gabia.com>. Message-ID: <leadtest.536063.2352344.github-robot-ovn-kubernetes.reply.1795656017.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45748736337/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45735094701/attempts/1"
+            },
+            {
+              "time": "2026-11-26T03:46:19Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45750341929/attempts/1"
             }
           ]
         }
