@@ -1,4 +1,50 @@
 {
   "schema": 16,
-  "series": []
+  "series": [
+    {
+      "id": 536138,
+      "name": "[ovs-dev] ci: Add job testing tmpfiles-managed log ownership.",
+      "version": 1,
+      "date": "2026-11-26T09:49:07+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=536138",
+      "submitter": {
+        "name": "Zhang Hua",
+        "email": "joshua.zhang@canonical.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-26T09:53:01Z",
+      "patches": [
+        {
+          "id": 2352520,
+          "number": 1,
+          "name": "[ovs-dev] ci: Add job testing tmpfiles-managed log ownership.",
+          "msgid": "<20261126094907.3575925-1-joshua.zhang@canonical.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-26T09:53:07Z",
+              "action": "discovered",
+              "detail": "Found in series 536138.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45794038750/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T09:53:01Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45794038750/attempts/1"
+        },
+        {
+          "time": "2026-11-26T09:53:07Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45794038750/attempts/1"
+        }
+      ]
+    }
+  ]
 }
