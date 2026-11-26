@@ -12,21 +12,90 @@
         "email": "joshua.zhang@canonical.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "b9b19282f5cfe824300c4290f1bd91217db7d88a",
+        "why": "default"
+      },
+      "branch": "series_536138",
       "discovered": "2026-11-26T09:53:01Z",
+      "started": "2026-11-26T09:55:19Z",
       "patches": [
         {
           "id": 2352520,
           "number": 1,
           "name": "[ovs-dev] ci: Add job testing tmpfiles-managed log ownership.",
           "msgid": "<20261126094907.3575925-1-joshua.zhang@canonical.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn] ci: Add job testing tmpfiles-managed log ownership.",
+          "sender": {
+            "name": "Zhang Hua",
+            "email": "joshua.zhang@canonical.com"
+          },
+          "status": "pushed",
+          "sha": "4b0062562e498e281da00b01cc107319f73fd894",
+          "pushed": "2026-11-26T09:55:25Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (b9b19282f5cf).",
+              "updated": "2026-11-26T09:55:25Z",
+              "completed": "2026-11-26T09:55:25Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536138.2352520.apply-robot.final.1795686919.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536138-2352520-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-26T09:55:29Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-26T09:53:07Z",
               "action": "discovered",
               "detail": "Found in series 536138.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45794038750/attempts/1"
+            },
+            {
+              "time": "2026-11-26T09:55:25Z",
+              "action": "applied",
+              "detail": "Commit 4b0062562e498e281da00b01cc107319f73fd894 on base main (b9b19282f5cfe824300c4290f1bd91217db7d88a).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45796364848/attempts/1"
+            },
+            {
+              "time": "2026-11-26T09:55:27Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536138 to 4b0062562e498e281da00b01cc107319f73fd894.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45796364848/attempts/1"
+            },
+            {
+              "time": "2026-11-26T09:55:29Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 4b0062562e498e281da00b01cc107319f73fd894 (request 536138-2352520-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45796364848/attempts/1"
+            },
+            {
+              "time": "2026-11-26T09:55:30Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536138.2352520.apply-robot.final.1795686919.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45796364848/attempts/1"
             }
           ]
         }
@@ -43,6 +112,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45794038750/attempts/1"
+        },
+        {
+          "time": "2026-11-26T09:55:23Z",
+          "action": "base-selected",
+          "detail": "main at b9b19282f5cfe824300c4290f1bd91217db7d88a: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45796364848/attempts/1"
         }
       ]
     }
