@@ -33,7 +33,7 @@
             "name": "Howon Park",
             "email": "hwpark@gabia.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "8c19f562728425dab1c129569dffbaa799aa2ce6",
           "pushed": "2026-11-26T15:10:19Z",
           "comments_seen": 3797313,
@@ -367,6 +367,12 @@
               "detail": "Replied about github-robot: ovn-kubernetes (fail) to \"Howon Park\" <hwpark@gabia.com>. Message-ID: <leadtest.536063.2352344.github-robot-ovn-kubernetes.reply.1795656017.2@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45735094701/attempts/2"
+            },
+            {
+              "time": "2026-11-26T16:27:14Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
             }
           ]
         }
@@ -985,21 +991,34 @@
         "email": "amusil@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "skipped",
+      "reason": "patches are no longer active",
       "discovered": "2026-11-26T15:54:11Z",
+      "finished": "2026-11-26T16:27:24Z",
       "patches": [
         {
           "id": 2352809,
           "number": 1,
           "name": "[ovs-dev] ovs: Bump submodule to the tip of branch-4.0.",
           "msgid": "<20261126155143.2097088-1-amusil@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn] ovs: Bump submodule to the tip of branch-4.0.",
+          "sender": {
+            "name": "Ales Musil",
+            "email": "amusil@redhat.com"
+          },
+          "status": "skipped",
           "decisions": [
             {
               "time": "2026-11-26T15:54:23Z",
               "action": "discovered",
               "detail": "Found in series 536224.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
+            },
+            {
+              "time": "2026-11-26T16:27:25Z",
+              "action": "skipped",
+              "detail": "Series skipped: patches are no longer active",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
             }
           ]
         }
@@ -1016,6 +1035,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
+        },
+        {
+          "time": "2026-11-26T16:27:25Z",
+          "action": "skipped",
+          "detail": "patches are no longer active",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
         }
       ]
     },
@@ -1151,6 +1176,51 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 536234,
+      "name": "[ovs-dev] ovs: Bump submodule to the tip of main.",
+      "version": 1,
+      "date": "2026-11-26T16:17:34+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=536234",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-26T16:26:28Z",
+      "patches": [
+        {
+          "id": 2352822,
+          "number": 1,
+          "name": "[ovs-dev] ovs: Bump submodule to the tip of main.",
+          "msgid": "<20261126161734.2117924-1-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-26T16:26:57Z",
+              "action": "discovered",
+              "detail": "Found in series 536234.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T16:26:28Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
+        },
+        {
+          "time": "2026-11-26T16:26:57Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
         }
       ]
     }
