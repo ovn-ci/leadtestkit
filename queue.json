@@ -85,15 +85,23 @@
               "id": 45796481644,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45796481644",
-              "status": "in_progress",
-              "updated": "2026-11-26T10:21:11Z",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-26T10:43:33Z",
+              "completed": "2026-11-26T10:43:33Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.536138.2352520.github-robot-build-and-test.pending.1795686919.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536138.2352520.github-robot-build-and-test.final.1795686919.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
             },
             {
               "kind": "push",
@@ -236,6 +244,20 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061034.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45798709784/attempts/1"
+            },
+            {
+              "time": "2026-11-26T10:43:33Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45796481644, attempt 1: completed: success.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45801078088/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45796481644/attempts/1"
+            },
+            {
+              "time": "2026-11-26T10:43:36Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.536138.2352520.github-robot-build-and-test.final.1795686919.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45801078088/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45796481644/attempts/1"
             }
           ]
         }
