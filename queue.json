@@ -588,21 +588,34 @@
         "email": "amusil@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "skipped",
+      "reason": "patches are no longer active",
       "discovered": "2026-11-26T15:58:07Z",
+      "finished": "2026-11-26T16:31:03Z",
       "patches": [
         {
           "id": 2352812,
           "number": 1,
           "name": "[ovs-dev] ovs: Bump submodule to the tip of branch-3.7.",
           "msgid": "<20261126155409.2098058-1-amusil@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH ovn] ovs: Bump submodule to the tip of branch-3.7.",
+          "sender": {
+            "name": "Ales Musil",
+            "email": "amusil@redhat.com"
+          },
+          "status": "skipped",
           "decisions": [
             {
               "time": "2026-11-26T15:58:13Z",
               "action": "discovered",
               "detail": "Found in series 536225.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
+            },
+            {
+              "time": "2026-11-26T16:31:03Z",
+              "action": "skipped",
+              "detail": "Series skipped: patches are no longer active",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
             }
           ]
         }
@@ -619,6 +632,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
+        },
+        {
+          "time": "2026-11-26T16:31:03Z",
+          "action": "skipped",
+          "detail": "patches are no longer active",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
         }
       ]
     },
