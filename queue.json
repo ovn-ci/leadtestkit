@@ -351,8 +351,8 @@
               "id": 45849240031,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45849240031",
-              "status": "queued",
-              "updated": "2026-11-26T15:49:32Z",
+              "status": "in_progress",
+              "updated": "2026-11-26T16:47:40Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -492,6 +492,13 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061049.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
+            },
+            {
+              "time": "2026-11-26T16:47:40Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 45849240031, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45860813831/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45849240031/attempts/1"
             }
           ]
         },
@@ -588,21 +595,90 @@
         "email": "amusil@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "branch-26.03",
+        "sha": "5bfee3fe5e4870279bcb1779047134b5fc4b3781",
+        "why": "subject: branch-26.03"
+      },
+      "branch": "series_536230",
       "discovered": "2026-11-26T16:13:10Z",
+      "started": "2026-11-26T16:47:46Z",
       "patches": [
         {
           "id": 2352818,
           "number": 1,
           "name": "[ovs-dev,branch-26.03] ovs: Bump submodule to the tip of branch-3.7.",
           "msgid": "<20261126160904.2107458-1-amusil@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH branch-26.03 ovn] ovs: Bump submodule to the tip of branch-3.7.",
+          "sender": {
+            "name": "Ales Musil",
+            "email": "amusil@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "cdb67a2ad4189eb83c89ffc39e0fb90c51074db4",
+          "pushed": "2026-11-26T16:47:51Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of branch-26.03 (5bfee3fe5e48).",
+              "updated": "2026-11-26T16:47:51Z",
+              "completed": "2026-11-26T16:47:51Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536230.2352818.apply-robot.final.1795711666.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536230-2352818-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-26T16:47:55Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-26T16:13:16Z",
               "action": "discovered",
               "detail": "Found in series 536230.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+            },
+            {
+              "time": "2026-11-26T16:47:51Z",
+              "action": "applied",
+              "detail": "Commit cdb67a2ad4189eb83c89ffc39e0fb90c51074db4 on base branch-26.03 (5bfee3fe5e4870279bcb1779047134b5fc4b3781).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45860813831/attempts/1"
+            },
+            {
+              "time": "2026-11-26T16:47:53Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536230 to cdb67a2ad4189eb83c89ffc39e0fb90c51074db4.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45860813831/attempts/1"
+            },
+            {
+              "time": "2026-11-26T16:47:55Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit cdb67a2ad4189eb83c89ffc39e0fb90c51074db4 (request 536230-2352818-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45860813831/attempts/1"
+            },
+            {
+              "time": "2026-11-26T16:47:55Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536230.2352818.apply-robot.final.1795711666.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45860813831/attempts/1"
             }
           ]
         }
@@ -619,6 +695,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+        },
+        {
+          "time": "2026-11-26T16:47:47Z",
+          "action": "base-selected",
+          "detail": "branch-26.03 at 5bfee3fe5e4870279bcb1779047134b5fc4b3781: subject: branch-26.03.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45860813831/attempts/1"
         }
       ]
     },
