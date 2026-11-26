@@ -33,7 +33,7 @@
             "name": "Zhang Hua",
             "email": "joshua.zhang@canonical.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "4b0062562e498e281da00b01cc107319f73fd894",
           "pushed": "2026-11-26T09:55:25Z",
           "runs": [
@@ -286,6 +286,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.536138.2352520.github-robot-ovn-kubernetes.final.1795686919.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45819395038/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45796481892/attempts/1"
+            },
+            {
+              "time": "2026-11-26T12:33:17Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45819395038/attempts/1"
             }
           ]
         }
