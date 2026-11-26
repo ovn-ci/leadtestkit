@@ -365,6 +365,8 @@
           "sha": "ebef7baa2dd91bc73a0dbf8250b602d600d1eb2d",
           "pushed": "2026-11-26T15:27:09Z",
           "comments_seen": 3797476,
+          "comments_pending": true,
+          "comments_pending_since": "2026-11-26T19:47:54Z",
           "runs": [
             {
               "kind": "apply",
