@@ -1160,6 +1160,12 @@
               "detail": "Sent final email for github-robot: Checkpatch (success). Message-ID: <leadtest.536231.2352819.github-robot-checkpatch.final.1795714233.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45869606732/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45868340335/attempts/1"
+            },
+            {
+              "time": "2026-11-26T17:55:01Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061057.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45869606732/attempts/1"
             }
           ]
         }
