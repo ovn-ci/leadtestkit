@@ -13353,6 +13353,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
+            },
+            {
+              "time": "2026-11-26T19:29:06Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061070.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
             }
           ]
         }
@@ -13380,6 +13386,76 @@
           "time": "2026-11-26T19:25:15Z",
           "action": "done",
           "detail": "All patches and reports are complete.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 536234,
+      "name": "[ovs-dev] ovs: Bump submodule to the tip of main.",
+      "version": 1,
+      "date": "2026-11-26T16:17:34+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=536234",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 1,
+      "status": "skipped",
+      "reason": "already applied on main",
+      "discovered": "2026-11-26T16:26:28Z",
+      "finished": "2026-11-26T19:28:54Z",
+      "patches": [
+        {
+          "id": 2352822,
+          "number": 1,
+          "name": "[ovs-dev] ovs: Bump submodule to the tip of main.",
+          "msgid": "<20261126161734.2117924-1-amusil@redhat.com>",
+          "subject": "[ovs-dev] [PATCH ovn] ovs: Bump submodule to the tip of main.",
+          "sender": {
+            "name": "Ales Musil",
+            "email": "amusil@redhat.com"
+          },
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-26T16:26:57Z",
+              "action": "discovered",
+              "detail": "Found in series 536234.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
+            },
+            {
+              "time": "2026-11-26T19:28:55Z",
+              "action": "skipped",
+              "detail": "Series skipped: already applied on main",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T16:26:28Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
+        },
+        {
+          "time": "2026-11-26T16:26:57Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45856123204/attempts/1"
+        },
+        {
+          "time": "2026-11-26T19:28:55Z",
+          "action": "base-selected",
+          "detail": "main at ab184f7a60c67b172c637ecece6774f573e79c45: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
+        },
+        {
+          "time": "2026-11-26T19:28:55Z",
+          "action": "skipped",
+          "detail": "already applied on main",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
         }
       ]
