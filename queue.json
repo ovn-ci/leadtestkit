@@ -455,15 +455,23 @@
               "id": 45848062201,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/45848062201",
-              "status": "in_progress",
-              "updated": "2026-11-26T15:40:51Z",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-26T15:54:40Z",
+              "completed": "2026-11-26T15:54:40Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.536217.2352776.github-robot-build-and-test.pending.1795706254.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536217.2352776.github-robot-build-and-test.final.1795706254.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
             },
             {
               "kind": "push",
@@ -606,6 +614,20 @@
               "detail": "ovn-kubernetes run 45848062255, attempt 1: in_progress.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45848062255/attempts/1"
+            },
+            {
+              "time": "2026-11-26T15:54:40Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45848062201, attempt 1: completed: success.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45848062201/attempts/1"
+            },
+            {
+              "time": "2026-11-26T15:54:50Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.536217.2352776.github-robot-build-and-test.final.1795706254.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45848062201/attempts/1"
             }
           ]
         },
@@ -907,6 +929,51 @@
           "action": "base-selected",
           "detail": "main at fb0cd8cb276bb567cb9576b902d95261f4845777: default.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45846269111/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 536224,
+      "name": "[ovs-dev] ovs: Bump submodule to the tip of branch-4.0.",
+      "version": 1,
+      "date": "2026-11-26T15:51:43+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=536224",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-26T15:54:11Z",
+      "patches": [
+        {
+          "id": 2352809,
+          "number": 1,
+          "name": "[ovs-dev] ovs: Bump submodule to the tip of branch-4.0.",
+          "msgid": "<20261126155143.2097088-1-amusil@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-26T15:54:23Z",
+              "action": "discovered",
+              "detail": "Found in series 536224.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T15:54:11Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
+        },
+        {
+          "time": "2026-11-26T15:54:23Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45851304951/attempts/1"
         }
       ]
     }
