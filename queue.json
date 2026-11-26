@@ -892,7 +892,7 @@
             "name": "Ales Musil",
             "email": "amusil@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "cdb67a2ad4189eb83c89ffc39e0fb90c51074db4",
           "pushed": "2026-11-26T16:47:51Z",
           "runs": [
@@ -1167,6 +1167,12 @@
               "detail": "Replied about github-robot: ovn-kubernetes (fail) to \"Ales Musil\" <amusil@redhat.com>. Message-ID: <leadtest.536230.2352818.github-robot-ovn-kubernetes.reply.1795711666.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/45862059491/attempts/1"
+            },
+            {
+              "time": "2026-11-26T19:25:06Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45881532455/attempts/1"
             }
           ]
         }
