@@ -884,21 +884,90 @@
         "email": "amusil@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "branch-26.09",
+        "sha": "221a90913c31b8dd1ff6849a8f07f3bb7a8e71d3",
+        "why": "subject: branch-26.09"
+      },
+      "branch": "series_536231",
       "discovered": "2026-11-26T16:13:10Z",
+      "started": "2026-11-26T17:30:33Z",
       "patches": [
         {
           "id": 2352819,
           "number": 1,
           "name": "[ovs-dev,branch-26.09] ovs: Bump submodule to the tip of branch-4.0.",
           "msgid": "<20261126160926.2107768-1-amusil@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH branch-26.09 ovn] ovs: Bump submodule to the tip of branch-4.0.",
+          "sender": {
+            "name": "Ales Musil",
+            "email": "amusil@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "b90ccebc13068edb57d692dd8ebe7757b7ec64b9",
+          "pushed": "2026-11-26T17:30:40Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of branch-26.09 (221a90913c31).",
+              "updated": "2026-11-26T17:30:40Z",
+              "completed": "2026-11-26T17:30:40Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536231.2352819.apply-robot.final.1795714233.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536231-2352819-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-26T17:30:43Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-26T16:13:22Z",
               "action": "discovered",
               "detail": "Found in series 536231.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+            },
+            {
+              "time": "2026-11-26T17:30:40Z",
+              "action": "applied",
+              "detail": "Commit b90ccebc13068edb57d692dd8ebe7757b7ec64b9 on base branch-26.09 (221a90913c31b8dd1ff6849a8f07f3bb7a8e71d3).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45867508754/attempts/1"
+            },
+            {
+              "time": "2026-11-26T17:30:41Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536231 to b90ccebc13068edb57d692dd8ebe7757b7ec64b9.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45867508754/attempts/1"
+            },
+            {
+              "time": "2026-11-26T17:30:43Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit b90ccebc13068edb57d692dd8ebe7757b7ec64b9 (request 536231-2352819-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45867508754/attempts/1"
+            },
+            {
+              "time": "2026-11-26T17:30:43Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536231.2352819.apply-robot.final.1795714233.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45867508754/attempts/1"
             }
           ]
         }
@@ -915,6 +984,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45853721326/attempts/1"
+        },
+        {
+          "time": "2026-11-26T17:30:35Z",
+          "action": "base-selected",
+          "detail": "branch-26.09 at 221a90913c31b8dd1ff6849a8f07f3bb7a8e71d3: subject: branch-26.09.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/45867508754/attempts/1"
         }
       ]
     },
