@@ -280,6 +280,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46035488064/attempts/1"
+            },
+            {
+              "time": "2026-11-27T17:01:53Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061113.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46037541990/attempts/1"
             }
           ]
         },
@@ -748,6 +754,12 @@
               "detail": "ovn-kubernetes run 46036060273, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46037541990/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46036060273/attempts/1"
+            },
+            {
+              "time": "2026-11-27T17:02:05Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061115.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46037541990/attempts/1"
             }
           ]
         }
