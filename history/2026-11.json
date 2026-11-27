@@ -14872,8 +14872,6 @@
           "sha": "a55cfc016c1d1f017bf63fe9b6d007954beadfe1",
           "pushed": "2026-11-27T13:13:56Z",
           "comments_seen": 3797872,
-          "comments_pending": true,
-          "comments_pending_since": "2026-11-27T14:55:09Z",
           "runs": [
             {
               "kind": "apply",
@@ -15136,6 +15134,12 @@
               "action": "check-posted",
               "detail": "success check github-robot-_ovn-kubernetes from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061111.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46029045968/attempts/1"
+            },
+            {
+              "time": "2026-11-27T21:04:52Z",
+              "action": "comments-skipped",
+              "detail": "Gave up waiting for comments: none in 6h0m0s of Patchwork being available since the activity was detected at 2026-11-27T14:55:09Z.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46066799375/attempts/1"
             }
           ]
         }
