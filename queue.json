@@ -260,6 +260,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.536400.2353496.github-robot-build-and-test.final.1795785228.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46009035273/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46005326719/attempts/1"
+            },
+            {
+              "time": "2026-11-27T13:56:45Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061086.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46011186291/attempts/1"
             }
           ]
         }
