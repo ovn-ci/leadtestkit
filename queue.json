@@ -198,6 +198,18 @@
               "detail": "Sent pending email for github-robot: ovn-kubernetes (pending). Message-ID: <leadtest.536400.2353496.github-robot-ovn-kubernetes.pending.1795785228.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46002591545/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46005326704/attempts/1"
+            },
+            {
+              "time": "2026-11-27T13:18:54Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061082.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46004710425/attempts/1"
+            },
+            {
+              "time": "2026-11-27T13:19:06Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061083.html",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46004710425/attempts/1"
             }
           ]
         }
