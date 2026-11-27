@@ -36,6 +36,8 @@
           "status": "pushed",
           "sha": "a55cfc016c1d1f017bf63fe9b6d007954beadfe1",
           "pushed": "2026-11-27T13:13:56Z",
+          "comments_pending": true,
+          "comments_pending_since": "2026-11-27T13:18:31Z",
           "runs": [
             {
               "kind": "apply",
