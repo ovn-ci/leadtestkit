@@ -290,6 +290,231 @@
           "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46002591545/attempts/1"
         }
       ]
+    },
+    {
+      "id": 536412,
+      "name": "inc-proc-eng: Allow for multiple engines in the same process.",
+      "version": 2,
+      "date": "2026-11-27T14:07:15+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/ovn/list/?series=536412",
+      "submitter": {
+        "name": "Dumitru Ceara",
+        "email": "dceara@redhat.com"
+      },
+      "total": 3,
+      "cover_id": 2353542,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/ovn-org/ovn.git",
+        "branch": "main",
+        "sha": "ab184f7a60c67b172c637ecece6774f573e79c45",
+        "why": "default"
+      },
+      "branch": "series_536412",
+      "discovered": "2026-11-27T14:10:09Z",
+      "started": "2026-11-27T14:10:44Z",
+      "patches": [
+        {
+          "id": 2353543,
+          "number": 1,
+          "name": "[ovs-dev,v2,1/3] inc-proc-eng: Avoid truncating stopwatch names.",
+          "msgid": "<20261127140718.662129-2-dceara@redhat.com>",
+          "subject": "[ovs-dev] [PATCH ovn v2 1/3] inc-proc-eng: Avoid truncating stopwatch names.",
+          "sender": {
+            "name": "Dumitru Ceara",
+            "email": "dceara@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "93d3df5bde1d19e0f82bdc69d0f031fff94d8e03",
+          "pushed": "2026-11-27T14:11:08Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ab184f7a60c6).",
+              "updated": "2026-11-27T14:11:08Z",
+              "completed": "2026-11-27T14:11:08Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536412.2353543.apply-robot.final.1795788644.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536412-2353543-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-27T14:11:12Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-27T14:10:27Z",
+              "action": "discovered",
+              "detail": "Found in series 536412.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:08Z",
+              "action": "applied",
+              "detail": "Commit 93d3df5bde1d19e0f82bdc69d0f031fff94d8e03 on base main (ab184f7a60c67b172c637ecece6774f573e79c45).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:10Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536412 to 93d3df5bde1d19e0f82bdc69d0f031fff94d8e03.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:12Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 93d3df5bde1d19e0f82bdc69d0f031fff94d8e03 (request 536412-2353543-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:13Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536412.2353543.apply-robot.final.1795788644.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2353546,
+          "number": 2,
+          "name": "[ovs-dev,v2,2/3] inc-proc-eng: Give each graph its own engine.",
+          "msgid": "<20261127140718.662129-3-dceara@redhat.com>",
+          "subject": "[ovs-dev] [PATCH ovn v2 2/3] inc-proc-eng: Give each graph its own engine.",
+          "sender": {
+            "name": "Dumitru Ceara",
+            "email": "dceara@redhat.com"
+          },
+          "status": "applied",
+          "sha": "746652210c45ddb58997aa67bfd59d1e63d358d7",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ab184f7a60c6).",
+              "updated": "2026-11-27T14:11:08Z",
+              "completed": "2026-11-27T14:11:08Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536412.2353546.apply-robot.final.1795788644.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-27T14:10:27Z",
+              "action": "discovered",
+              "detail": "Found in series 536412.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:08Z",
+              "action": "applied",
+              "detail": "Commit 746652210c45ddb58997aa67bfd59d1e63d358d7 on base main (ab184f7a60c67b172c637ecece6774f573e79c45).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:14Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536412.2353546.apply-robot.final.1795788644.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2353545,
+          "number": 3,
+          "name": "[ovs-dev,v2,3/3] inc-proc-eng: Pass context to each engine invocation.",
+          "msgid": "<20261127140718.662129-4-dceara@redhat.com>",
+          "subject": "[ovs-dev] [PATCH ovn v2 3/3] inc-proc-eng: Pass context to each engine invocation.",
+          "sender": {
+            "name": "Dumitru Ceara",
+            "email": "dceara@redhat.com"
+          },
+          "status": "applied",
+          "sha": "39b43f7e9e00fa7bdff847226bd8e028286f3c16",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (ab184f7a60c6).",
+              "updated": "2026-11-27T14:11:08Z",
+              "completed": "2026-11-27T14:11:08Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536412.2353545.apply-robot.final.1795788644.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-27T14:10:27Z",
+              "action": "discovered",
+              "detail": "Found in series 536412.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:08Z",
+              "action": "applied",
+              "detail": "Commit 39b43f7e9e00fa7bdff847226bd8e028286f3c16 on base main (ab184f7a60c67b172c637ecece6774f573e79c45).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:11:14Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536412.2353545.apply-robot.final.1795788644.1@ovn.org>.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-27T14:10:09Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+        },
+        {
+          "time": "2026-11-27T14:10:27Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 3 patches.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+        },
+        {
+          "time": "2026-11-27T14:11:06Z",
+          "action": "base-selected",
+          "detail": "main at ab184f7a60c67b172c637ecece6774f573e79c45: default.",
+          "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1"
+        }
+      ]
     }
   ]
 }
