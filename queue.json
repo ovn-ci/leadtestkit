@@ -34,7 +34,7 @@
             "name": "Dumitru Ceara",
             "email": "dceara@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "93d3df5bde1d19e0f82bdc69d0f031fff94d8e03",
           "pushed": "2026-11-27T14:11:08Z",
           "comments_seen": 3797961,
@@ -274,6 +274,12 @@
               "detail": "Sent final email for github-robot: ovn-kubernetes (success). Message-ID: <leadtest.536412.2353543.github-robot-ovn-kubernetes.final.1795788644.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46035488064/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46013622289/attempts/1"
+            },
+            {
+              "time": "2026-11-27T16:43:45Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46035488064/attempts/1"
             }
           ]
         },
@@ -552,8 +558,9 @@
             "name": "Dumitru Ceara",
             "email": "dceara@redhat.com"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "39b43f7e9e00fa7bdff847226bd8e028286f3c16",
+          "pushed": "2026-11-27T16:43:51Z",
           "runs": [
             {
               "kind": "apply",
@@ -571,6 +578,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536412-2353545-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-27T16:43:55Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -597,6 +615,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061087.html",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46015688567/attempts/1"
+            },
+            {
+              "time": "2026-11-27T16:43:52Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536412 to 39b43f7e9e00fa7bdff847226bd8e028286f3c16.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46035488064/attempts/1"
+            },
+            {
+              "time": "2026-11-27T16:43:55Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 39b43f7e9e00fa7bdff847226bd8e028286f3c16 (request 536412-2353545-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46035488064/attempts/1"
             }
           ]
         }
