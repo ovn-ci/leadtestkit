@@ -602,8 +602,8 @@
               "id": 46020265324,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/46020265324",
-              "status": "in_progress",
-              "updated": "2026-11-27T14:59:40Z",
+              "status": "queued",
+              "updated": "2026-11-27T15:31:22Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -618,8 +618,8 @@
               "id": 46020265437,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/46020265437",
-              "status": "queued",
-              "updated": "2026-11-27T15:11:22Z",
+              "status": "in_progress",
+              "updated": "2026-11-27T15:31:22Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -751,6 +751,20 @@
               "action": "workflow-updated",
               "detail": "ovn-kubernetes run 46020265437, attempt 1: queued.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46020148570/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46020265437/attempts/1"
+            },
+            {
+              "time": "2026-11-27T15:31:22Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 46020265324, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46024670081/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46020265324/attempts/1"
+            },
+            {
+              "time": "2026-11-27T15:31:22Z",
+              "action": "workflow-updated",
+              "detail": "ovn-kubernetes run 46020265437, attempt 1: in_progress.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46024670081/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46020265437/attempts/1"
             }
           ]
