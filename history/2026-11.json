@@ -13310,6 +13310,8 @@
           "sha": "ebef7baa2dd91bc73a0dbf8250b602d600d1eb2d",
           "pushed": "2026-11-26T15:27:09Z",
           "comments_seen": 3797543,
+          "comments_pending": true,
+          "comments_pending_since": "2026-11-27T02:25:11Z",
           "runs": [
             {
               "kind": "apply",
@@ -13609,6 +13611,7 @@
           "status": "done",
           "sha": "401fd312f45adb0366df0d91974231450b311a81",
           "pushed": "2026-11-26T18:21:58Z",
+          "comments_seen": 3797546,
           "runs": [
             {
               "kind": "apply",
