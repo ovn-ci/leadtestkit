@@ -375,8 +375,8 @@
               "id": 46013622288,
               "attempt": 1,
               "url": "https://github.com/ovn-ci/ovn-test/actions/runs/46013622288",
-              "status": "in_progress",
-              "updated": "2026-11-27T14:15:05Z",
+              "status": "queued",
+              "updated": "2026-11-27T14:18:27Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -486,6 +486,13 @@
               "detail": "Sent pending email for github-robot: ovn-kubernetes (pending). Message-ID: <leadtest.536412.2353543.github-robot-ovn-kubernetes.pending.1795788644.1@ovn.org>.",
               "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1",
               "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46013622289/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:18:27Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 46013622288, attempt 1: queued.",
+              "run_url": "https://github.com/ovn-ci/leadtestkit/actions/runs/46013399649/attempts/1",
+              "workflow_url": "https://github.com/ovn-ci/ovn-test/actions/runs/46013622288/attempts/1"
             }
           ]
         },
