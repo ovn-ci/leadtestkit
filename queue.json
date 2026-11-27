@@ -37,6 +37,7 @@
           "status": "pushed",
           "sha": "93d3df5bde1d19e0f82bdc69d0f031fff94d8e03",
           "pushed": "2026-11-27T14:11:08Z",
+          "comments_seen": 3797957,
           "runs": [
             {
               "kind": "apply",
